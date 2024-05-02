@@ -20,9 +20,9 @@ class Barbearia {
     public void adicionarClienteFila(Cliente cliente) {
         if (filaEspera.size() < capacidadeFila) {
             filaEspera.add(cliente);
-            System.out.println("Cliente adicionado à fila de espera.");
+            System.out.println("Cliente adicionado na fila de espera.");
         } else {
-            System.out.println("A fila de espera está cheia. O cliente foi embora.");
+            System.out.println("A fila de espera esta cheia. O cliente foi embora.");
         }
     }
 

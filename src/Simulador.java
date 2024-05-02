@@ -1,7 +1,7 @@
 import java.util.Random;
 
 class Simulador {
-    private static final int TEMPO_SIMULACAO = 240; // Tempo total da simulação em minutos
+    private static final int TEMPO_SIMULACAO = 144; // Tempo total da simulação em minutos
     private static final int CAPACIDADE_FILA = 5; // Capacidade máxima da fila de espera
     private static final int NUM_BARBEIROS = 2; // Número de barbeiros na barbearia
 

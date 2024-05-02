@@ -20,7 +20,7 @@ class Barbeiro {
         this.ocupado = true;
         this.tipoServicoAtual = tipoServico;
         this.tempoServicoAtual = tempoServico;
-        System.out.println("Barbeiro iniciou serviço de " + tipoServico);
+        System.out.println("Barbeiro iniciou servico de " + tipoServico);
     }
 
     // Atualiza o tempo necessário para realizar o serviço atual
@@ -36,7 +36,7 @@ class Barbeiro {
     // Conclui o serviço atual
     private void concluirServico() {
         this.ocupado = false;
-        System.out.println("Barbeiro concluiu serviço de " + tipoServicoAtual);
+        System.out.println("Barbeiro concluiu servico de " + tipoServicoAtual);
         this.tipoServicoAtual = "";
         this.tempoServicoAtual = 0;
     }
