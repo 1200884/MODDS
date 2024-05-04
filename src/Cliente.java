@@ -2,16 +2,19 @@ import java.util.Random;
 
 class Cliente {
     private int tempoChegada;
-    private String tipoServico; // Por exemplo: corte de cabelo, barba, etc.
-    private int tempoServico; // Tempo necessário para realizar o serviço
+    private int tempoMinComer; 
+    private int tempoMaxComer; 
+    private String metodoPagamento;
+    private int tempoMedioComer; 
     private int tempoEsperaToleravel; // Tempo de espera tolerável pelo cliente
 
     // Construtor
-    public Cliente(int tempoChegada, String tipoServico, int tempoServico, int tempoEsperaToleravel) {
+    public Cliente(int tempoChegada, int tempoMinComer, int tempoMaxComer, int tempoMedioComer, String metodoPagamento, int tempoEsperaToleravel) {
         this.tempoChegada = tempoChegada;
-        this.tipoServico = tipoServico;
-        this.tempoServico = tempoServico;
         this.tempoEsperaToleravel = tempoEsperaToleravel;
+        this.tempoMinComer = tempoMinComer;
+        this.tempoMaxComer = tempoMaxComer;
+        this.metodoPagamento = metodoPagamento;
     }
 
     // Métodos getters
@@ -19,12 +22,22 @@ class Cliente {
         return tempoChegada;
     }
 
-    public String getTipoServico() {
-        return tipoServico;
-    }
-
     public int getTempoServico() {
         return tempoServico;
+    }
+    public int getTempoMinComer(){
+        return tempoMinComer;
+    }
+    
+    public int getTempoMaxComer(){
+        return tempoMaxComer;
+    }
+    
+    public int getmetodopagamento(){
+        return metodopagamento;
+    }
+    public int getTempoComer(){
+        return tempoMedioComer;
     }
 
     public int getTempoEsperaToleravel() {
@@ -36,11 +49,17 @@ class Cliente {
         Random random = new Random();
         // Definindo aleatoriamente os atributos do cliente
         int tempoChegada = tempoAtual;
-        String[] tiposServico = {"corte de cabelo", "barba", "tratamento capilar"}; // Exemplo de tipos de serviço
-        String tipoServico = tiposServico[random.nextInt(tiposServico.length)];
-        int tempoServico = random.nextInt(30) + 15; // Tempo de serviço aleatório entre 15 e 45 minutos
+        int tempoMinComer = random.nextInt(10) + 5; // Tempo de serviço aleatório entre 5 e 15 minutos
+        int tempoMaxComer = random.nextInt(20) + 16; // Tempo de serviço aleatório entre 16 e 35 minutos
+        int tempoMedioComer = (tempoMinComer + tempoMaxComer)/2;
+        String metodoPagamento;
+            if (random.nextBoolean()) {
+                metodoPagamento = "dinheiro";
+            } else {
+                metodoPagamento = "cartao de credito";
+            }
         int tempoEsperaToleravel = random.nextInt(60); // Tempo de espera tolerável aleatório entre 0 e 60 minutos
 
-        return new Cliente(tempoChegada, tipoServico, tempoServico, tempoEsperaToleravel);
+        return new Cliente(tempoChegada, tempoMinComer, tempoMaxComer, tempoMedioComer, metodoPagamento, tempoEsperaToleravel);
     }
 }

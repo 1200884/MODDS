@@ -2,15 +2,19 @@ import java.util.Random;
 
 class Simulador {
     private static final int TEMPO_SIMULACAO = 144; // Tempo total da simulação em minutos
-    private static final int CAPACIDADE_FILA = 5; // Capacidade máxima da fila de espera
-    private static final int NUM_BARBEIROS = 2; // Número de barbeiros na barbearia
+    private static final int CAPACIDADE_FILA = 20; // Capacidade máxima da fila de espera
+    private static final int NUM_EMPREGADOSMESA = 3; 
+    private static final int NUM_EMPREGADOSPAGAMENTO = 1; 
+    private static final int NUM_MESAS = 10; 
+    private static final int NUM_PRATOS = 3; 
+    private static final int NUM_COZINHEIROS = 3; 
 
-    private Barbearia barbearia;
+    private Restaurante restaurante;
     private int tempoAtual;
 
     // Método principal que inicia a simulação
     public void simular() {
-        inicializarBarbearia();
+        inicializarRestaurante();
 
         for (tempoAtual = 0; tempoAtual < TEMPO_SIMULACAO; tempoAtual++) {
             System.out.println("Tempo: " + tempoAtual);
@@ -18,14 +22,14 @@ class Simulador {
             // Gera clientes aleatórios
             gerarClientesAleatorios();
 
-            // Atualiza o estado dos barbeiros e da barbearia
-            barbearia.atualizarBarbeiros();
+            // Atualiza o estado dos empreatualizarempregadoMesa e da restaurante
+            restaurante.atualizarempregadoMesa();
 
-            // Verifica se há barbeiros disponíveis para atender clientes
-            while (!barbearia.filaVazia() && barbearia.barbeiroLivre() != null) {
-                Barbeiro barbeiroLivre = barbearia.barbeiroLivre();
-                Cliente cliente = barbearia.removerClienteFila();
-                barbeiroLivre.iniciarServico(cliente.getTipoServico(), cliente.getTempoServico());
+            // Verifica se há empreatualizarempregadoMesa disponíveis para atender clientes
+            while (!restaurante.filaVazia() && restaurante.empregadoMesaLivre() != null) {
+                EmpregadoMesa empregadoMesaLivre = restaurante.empregadoMesaLivre();
+                Cliente cliente = restaurante.removerClienteFila();
+                empregadoMesaLivre.iniciarServico(cliente.getTipoServico(), cliente.getTempoServico());
             }
 
             // Aguarda 1 minuto antes de avançar para o próximo tempo
@@ -37,9 +41,9 @@ class Simulador {
         }
     }
 
-    // Inicializa a barbearia com a capacidade da fila e o número de barbeiros
-    private void inicializarBarbearia() {
-        barbearia = new Barbearia(CAPACIDADE_FILA, NUM_BARBEIROS);
+    // Inicializa a restaurante com a capacidade da fila e o número de empreatualizarempregadoMesa
+    private void inicializarRestaurante() {
+        restaurante = new Restaurante(CAPACIDADE_FILA, NUM_EMPREGADOSMESA);
     }
 
     // Gera clientes aleatórios
@@ -47,7 +51,7 @@ class Simulador {
         Random random = new Random();
         if (random.nextDouble() < 0.4) { // Probabilidade de chegada de um cliente a cada minuto
             Cliente cliente = Cliente.gerarClienteAleatorio(tempoAtual);
-            barbearia.adicionarClienteFila(cliente);
+            restaurante.adicionarClienteFila(cliente);
         }
     }
 }

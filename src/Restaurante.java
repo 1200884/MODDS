@@ -1,18 +1,18 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Barbearia {
+class Restaurante {
     private Queue<Cliente> filaEspera;
     private int capacidadeFila;
-    private Barbeiro[] barbeiros;
+    private EmpregadoMesa[] empregadoMesa;
 
     // Construtor
-    public Barbearia(int capacidadeFila, int numBarbeiros) {
+    public Barbearia(int capacidadeFila, int numempregadoMesa) {
         this.filaEspera = new LinkedList<>();
         this.capacidadeFila = capacidadeFila;
-        this.barbeiros = new Barbeiro[numBarbeiros];
-        for (int i = 0; i < numBarbeiros; i++) {
-            barbeiros[i] = new Barbeiro();
+        this.empregadoMesa = new Barbeiro[numempregadoMesa];
+        for (int i = 0; i < numempregadoMesa; i++) {
+            empregadoMesa[i] = new EmpregadoMesa();
         }
     }
 
@@ -31,18 +31,18 @@ class Barbearia {
         return filaEspera.isEmpty();
     }
 
-    // Atualiza o estado dos barbeiros
-    public void atualizarBarbeiros() {
-        for (Barbeiro barbeiro : barbeiros) {
-            barbeiro.atualizarTempoServico();
+    // Atualiza o estado dos empregadoMesa
+    public void atualizarempregadoMesa() {
+        for (EmpregadoMesa empregadoMesa : empregadoMesa) {
+            empregadoMesa.atualizarTempoServico();
         }
     }
 
     // Método para verificar se algum barbeiro está livre
-    public Barbeiro barbeiroLivre() {
-        for (Barbeiro barbeiro : barbeiros) {
-            if (!barbeiro.estaOcupado()) {
-                return barbeiro;
+    public EmpregadoMesa empregadoMesaLivre() {
+        for (EmpregadoMesa empregadoMesa : empregadoMesa) {
+            if (!empregadoMesa.estaOcupado()) {
+                return empregadoMesa;
             }
         }
         return null;
