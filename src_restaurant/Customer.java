@@ -59,6 +59,8 @@ public class Customer {
     public void decreaseCurrentActionTimeLeft(){
         if(this.currentActionTimeLeft > 0){
             this.currentActionTimeLeft--;
+        }else{
+            this.currentActionTimeLeft = 0;
         }
     }
 }

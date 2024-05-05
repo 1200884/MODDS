@@ -75,6 +75,9 @@ public class RestaurantSimulation {
                     System.out.println("Cozinheiro de peixe " + cooker.getName() + " está Ocupado a fazer um prato durante " + cooker.getCurrentActionTimeLeft() + " tempo");
                 }
             }
+            System.out.println("-----PRATOS-----");
+            System.out.println("Pratos de carne por fazer: " + meatDishOrder.size());
+            System.out.println("Pratos de peixe por fazer: " + fishDishOrder.size());
 
             Thread.sleep(1000);
 
@@ -133,7 +136,6 @@ public class RestaurantSimulation {
         if(!meatDishOrder.isEmpty()){
             for(Cooker cooker : meatCookers){
                 if(cooker.isAvailable() && !meatDishOrder.isEmpty()){
-                    System.out.println("Tamanho meatDishOrder: " + meatDishOrder.size());
                     meatDishOrder.remove(0);
                     cooker.setAvailable(false);
                     cooker.setCurrentActionTimeLeft(random.nextInt(cooker.getMaxTimeCook() - cooker.getMinTimeCook()) + cooker.getMinTimeCook());
@@ -144,7 +146,6 @@ public class RestaurantSimulation {
         if(!fishDishOrder.isEmpty()){
             for(Cooker cooker : fishCookers){
                 if(cooker.isAvailable() && !fishDishOrder.isEmpty()){
-                    System.out.println("Tamanho fishDishOrder: " + fishDishOrder.size());
                     fishDishOrder.remove(0);
                     cooker.setAvailable(false);
                     cooker.setCurrentActionTimeLeft(random.nextInt(cooker.getMaxTimeCook() - cooker.getMinTimeCook()) + cooker.getMinTimeCook());
@@ -187,15 +188,18 @@ public class RestaurantSimulation {
                     }
 
                     for(Customer customer : table.getCustomersUsingTable()){
-                        int eatingTime = random.nextInt(customer.getMaxTimeEat() - customer.getMinTimeEat()) - customer.getMinTimeEat();
+                        int eatingTime = random.nextInt(customer.getMaxTimeEat() - customer.getMinTimeEat()) + customer.getMinTimeEat();
                         customer.setCurrentActionTimeLeft(eatingTime);
                     }
+
+                    table.setServed(true);
                 }
             }else if(!table.getCustomersUsingTable().isEmpty() && table.isServed){
                 int customersAlreadyEat = 0;
-
+                System.out.println("-----CLIENTES A COMER NA MESA " + table.getTableNum() + "-----");
                 for(Customer customer : table.getCustomersUsingTable()){
                     customer.decreaseCurrentActionTimeLeft();
+                    System.out.println("Faltam " + customer.getCurrentActionTimeLeft() + " tempos");
                     if(customer.getCurrentActionTimeLeft() <= 0){
                         customersAlreadyEat++;
                     }
@@ -384,7 +388,7 @@ public class RestaurantSimulation {
         paymentEmployee.setAvailable(false);
         
         if(paymentMethod.equalsIgnoreCase("Card")){
-            int time = random.nextInt(paymentEmployee.getMaxTimeExecCard() - paymentEmployee.getMinTimeExecCard()) - paymentEmployee.getMinTimeExecCard();
+            int time = random.nextInt(paymentEmployee.getMaxTimeExecCard() - paymentEmployee.getMinTimeExecCard()) + paymentEmployee.getMinTimeExecCard();
             paymentEmployee.setCurrentActionTimeLeft(time);
         }
     }
@@ -414,7 +418,7 @@ public class RestaurantSimulation {
     }
 
     public void prepareTableToNextCustomers(Waitress waitress, Table table){
-        int workingTime = random.nextInt(waitress.getMaxTimeExec() - waitress.getMinTimeExec()) - waitress.getMinTimeExec();
+        int workingTime = random.nextInt(waitress.getMaxTimeExec() - waitress.getMinTimeExec()) + waitress.getMinTimeExec();
 
         waitress.setAvailable(false);
         waitress.setCurrentActionTimeLeft(workingTime);
@@ -433,7 +437,7 @@ public class RestaurantSimulation {
 
     public void findIfThereIsJoinedTableAndPrepareIt(Table table){
         for(Table tableAux : tables){
-            if(tableAux != table && tableAux.isTableBeingUsedAsSecondTable && tableAux.getCustomersUsingTable().containsAll(table.getCustomersUsingTable())){
+            if(tableAux != table && tableAux.isTableBeingUsedAsSecondTable && tableAux.getCustomersUsingTable().get(0) == table.getCustomersUsingTable().get(0)){
                 tableAux.setAvailable(true);
                 tableAux.setIsTableBeingUsedAsSecondTable(false);
                 tableAux.setServed(false);
