@@ -69,8 +69,6 @@ public class Cooker {
     public void decreaseCurrentActionTimeLeft(){
         if(this.currentActionTimeLeft > 0){
             this.currentActionTimeLeft--;
-        }else if(this.currentActionTimeLeft == 0){
-            setAvailable(true);
         }
     }
 }

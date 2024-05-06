@@ -4,16 +4,18 @@ public class Dish {
     private String foodType;
     private int minTimeEat;
     private int maxTimeEat;
+    private int price;
 
-    public Dish(String foodType, int minTimeEat, int maxTimeEat) {
+    public Dish(String foodType, int minTimeEat, int maxTimeEat, int price) {
         this.foodType = foodType;
         this.minTimeEat = minTimeEat;
         this.maxTimeEat = maxTimeEat;
+        this.price = price;
     }
 
     // Getters and setters
     public String getFoodType() {
-        return foodType;
+        return this.foodType;
     }
 
     public void setFoodType(String foodType) {
@@ -21,7 +23,7 @@ public class Dish {
     }
 
     public int getMinTimeEat() {
-        return minTimeEat;
+        return this.minTimeEat;
     }
 
     public void setMinTimeEat(int minTimeEat) {
@@ -29,11 +31,19 @@ public class Dish {
     }
 
     public int getMaxTimeEat() {
-        return maxTimeEat;
+        return this.maxTimeEat;
     }
 
     public void setMaxTimeEat(int maxTimeEat) {
         this.maxTimeEat = maxTimeEat;
+    }
+
+    public int getPrice() {
+        return this.price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 }
 

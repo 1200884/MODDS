@@ -8,14 +8,16 @@ public class Table {
     private List<Customer> customersUsingTable;
     boolean isServed;
     boolean needsToBePreparedForNextCustomers;
+    boolean isAlreadyBeingCleaned;
     boolean isTableBeingUsedAsSecondTable;
 
-    public Table(int tableNum, boolean isAvailable, List<Customer> customersUsingTable, boolean isServed, boolean needsToBePreparedForNextCustomers, boolean isTableBeingUsedAsSecondTable) {
+    public Table(int tableNum, boolean isAvailable, List<Customer> customersUsingTable, boolean isServed, boolean needsToBePreparedForNextCustomers, boolean isAlreadyBeingCleaned, boolean isTableBeingUsedAsSecondTable) {
         this.tableNum = tableNum;
         this.isAvailable = isAvailable;
         this.customersUsingTable = customersUsingTable;
         this.isServed = isServed;
         this.needsToBePreparedForNextCustomers = needsToBePreparedForNextCustomers;
+        this.isAlreadyBeingCleaned = isAlreadyBeingCleaned;
         this.isTableBeingUsedAsSecondTable = isTableBeingUsedAsSecondTable;
     }
 
@@ -58,6 +60,14 @@ public class Table {
 
     public void setNeedsToBePreparedForNextCustomers(boolean needsToBePreparedForNextCustomers) {
         this.needsToBePreparedForNextCustomers = needsToBePreparedForNextCustomers;
+    }
+
+    public boolean isAlreadyBeingCleaned() {
+        return this.isAlreadyBeingCleaned;
+    }
+
+    public void setIsAlreadyBeingCleaned(boolean isAlreadyBeingCleaned) {
+        this.isAlreadyBeingCleaned = isAlreadyBeingCleaned;
     }
 
     public boolean isTableBeingUsedAsSecondTable() {
