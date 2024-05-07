@@ -7,17 +7,21 @@ import java.util.Map;
 import java.util.Random;
 
 public class RestaurantSimulation {
-    private final int SIMULATION_DURATION = 20;
-    private final int NUMBER_OF_TABLES = 3;
+    private final int SIMULATION_DURATION = 5;
+    private final int NUMBER_OF_TABLES = 2;
     private final int NUMBER_OF_WAITRESSES = 3;
     private final int NUMBER_OF_MEAT_COOKERS = 2;
     private final int NUMBER_OF_FISH_COOKERS = 2;
     private final int NUMBER_OF_PAYMENT_EMPLOYEES = 1;
     private final int MAX_CUSTOMER_QUEUE_ALLOW = 20;
 
-    private int moneyEarned;
-    private int numberOfMeatDishesOfTheDay;
-    private int numberOfFishDishesOfTheDay;
+    private boolean isRestaurantOpen = true;
+    private boolean allTasksCompleted = false;
+
+    int currentTime = 1;
+    private int moneyEarned = 0;
+    private int numberOfMeatDishesOfTheDay = 0;
+    private int numberOfFishDishesOfTheDay = 0;
     
     List<Table> tables;
     List<Waitress> waitresses;
@@ -47,17 +51,44 @@ public class RestaurantSimulation {
 
         meatDish = new Dish("Meat", 10, 20, 6);
         fishDish = new Dish("Fish", 12, 25, 8);
+
+        System.out.println("-----SIMULAÇÃO DE RESTAURANTE-----");
+        System.out.println("No dia de hoje o restaurante tem disponíveis " + tables.size() + " mesas que podem ter até 4 clientes.");
+        System.out.println("Hoje os pratos de carne custam " + meatDish.getPrice() + " euros e os pratos de peixe custam " + fishDish.getPrice() + " euros");
+        System.out.println();
+        System.out.println("COZINHEIROS NO RESTAURANTE");
+        for(Cooker cooker : meatCookers){
+            System.out.println(cooker.getName() + " com especialidade em carne");
+        }
+        for(Cooker cooker : fishCookers){
+            System.out.println(cooker.getName() + " com especialidade em peixe");
+        }
+        System.out.println();
+        System.out.println("EMPREGADOS DE MESA NO RESTAURANTE");
+        for(Waitress waitress : waitresses){
+            System.out.println(waitress.getName());
+        }
+        System.out.println();
+        System.out.println("EMPREGADOS DE PAGAMENTO NO RESTAURANTE");
+        for(PaymentEmployee paymentEmployee : paymentEmployees){
+            System.out.println(paymentEmployee.getName());
+        }
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
     }
 
     public void simulate() throws InterruptedException{
-        int currentTime = 1;
-        moneyEarned = 0;
-        numberOfFishDishesOfTheDay = 0;
-        numberOfMeatDishesOfTheDay = 0;
 
-        while(currentTime <= SIMULATION_DURATION){
-            System.out.println();
+        while(currentTime <= SIMULATION_DURATION || !allTasksCompleted){
+            System.out.println("--------------------------------------------------");
             System.out.println("Time: " + currentTime);
+            if(isRestaurantOpen){
+                System.out.println("Restaurante encontra-se aberto");
+            }else{
+                System.out.println("Restaurante encontra-se fechado");
+            }
             System.out.println("Tamanho da fila: " + customerQueue.size());
             System.out.println("-----EMPREGADOS DE MESA-----");
             for(Waitress waitress : waitresses){
@@ -73,8 +104,14 @@ public class RestaurantSimulation {
             Thread.sleep(1000);
 
             simulateMinute();
+            System.out.println("--------------------------------------------------");
 
             currentTime++;
+
+            if(currentTime > SIMULATION_DURATION){
+                isRestaurantOpen = false;
+                checkIfAllTasksWereCompleted();
+            }
         }
 
         System.out.println();
@@ -83,10 +120,60 @@ public class RestaurantSimulation {
         System.out.println("-----NÚMERO DE PRATOS DE PEIXE FEITOS = " + numberOfFishDishesOfTheDay + "-----");
     }
 
+    /*
+    public void printInstantInformation(){
+        System.out.println("Instante: " + currentTime);
+        System.out.println("Número de pessoas na fila: " + customerQueue.size());
+        System.out.println();
+        System.out.println("-----EMPREGADOS DE MESA-----");
+        for(Waitress waitress : waitresses){
+            if(!waitress.isAvailable()){
+                System.out.println("Empregado de mesa " + waitress.getName() + " está a limpar a mesa " + waitress.getNumTableWorkingOn() + " e ainda vai demorar " + waitress.getCurrentActionTimeLeft() + " instantes a acabar.");
+            }else{
+                System.out.println("Empregado de mesa " + waitress.getName() + " está Disponível.");
+            }
+        }
+        System.out.println();
+        System.out.println("----COZINHEIROS-----");
+        for(Cooker cooker : meatCookers){
+            if(!cooker.isAvailable()){
+                System.out.println("Cozinheiro " + cooker.getName() + " está a preparar um pedido de carne que vai demorar " + cooker.getCurrentActionTimeLeft() + " instantes a acabar.");
+            }else{
+                System.out.println("Cozinheiro " + cooker.getName() + " está Disponível");
+            }
+        }
+        System.out.println();
+        System.out.println("-----PEDIDOS-----");
+        System.out.println("Pedidos de carne em espera: " + meatDishOrder.size());
+        System.out.println("Pedidos de peixe em espera: " + fishDishOrder.size());
+        System.out.println("Pedidos de carne prontos: " + readyMeatDishOrder.size());
+        System.out.println("Pedidos de carne prontos: " + readyFishDishOrder.size());
+        System.out.println();
+        System.out.println("-----EMPREGADOS DE PAGAMENTO-----");
+        for(PaymentEmployee paymentEmployee : paymentEmployees){
+            if(!paymentEmployee.isAvailable()){
+                System.out.println("Empregado de pagamento " + paymentEmployee.getName() + " está a realizar um processo de pagamento. Vai demorar " + paymentEmployee.getCurrentActionTimeLeft() + " instantes a acabar.");
+            }
+        }
+        System.out.println();
+        System.out.println("-----MESAS-----");
+        for(Table table : tables){
+            if(table.isAvailable()){
+                System.out.println("Mesa " + table.getTableNum() + " está Disponível");
+            }else if(table.isAlreadyBeingCleaned){
+                System.out.println("Mesa " + table.getTableNum() + " está a ser Limpa");
+            }else{
+                System.out.println("Mesa " + table.getTableNum() + " está Ocupada");
+            }
+        }
+        System.out.println();
+    }
+    */
+
     public void simulateMinute() throws InterruptedException{
         
         //Determina se chegaram ou não novos clientes
-        if(customerQueue.size() < MAX_CUSTOMER_QUEUE_ALLOW){
+        if(customerQueue.size() < MAX_CUSTOMER_QUEUE_ALLOW && isRestaurantOpen){
             int numberOfCustomers = random.nextInt(5) + 1;
             if(random.nextInt(101) < 40){
                 System.out.println("Chegaram " + numberOfCustomers + " clientes.");
@@ -96,7 +183,7 @@ public class RestaurantSimulation {
                 }
             }
         }else{
-            if(random.nextInt(101) < 40){
+            if(random.nextInt(101) < 40 && isRestaurantOpen){
                 System.out.println("Chegaram novos clientes mas a fila estava enorme. Eles foram embora!");
             }
         }
@@ -511,6 +598,35 @@ public class RestaurantSimulation {
         table.setCustomersUsingTable(new ArrayList<>());
         table.setNeedsToBePreparedForNextCustomers(false);
         table.setIsAlreadyBeingCleaned(false);
+    }
+
+    public void checkIfAllTasksWereCompleted(){
+        boolean checkIfItsAllOk = true;
+        for(Table table : tables){
+            if(!table.getCustomersUsingTable().isEmpty()){
+                checkIfItsAllOk = false;
+            }
+        }
+
+        for(Waitress waitress : waitresses){
+            if(!waitress.isAvailable()){
+                checkIfItsAllOk = false;
+            }
+        }
+
+        if(!customerQueue.isEmpty()){
+            checkIfItsAllOk = false;
+        }
+
+        for(PaymentEmployee paymentEmployee : paymentEmployees){
+            if(!paymentEmployee.isAvailable()){
+                checkIfItsAllOk = false;
+            }
+        }
+
+        if(checkIfItsAllOk){
+            allTasksCompleted = true;
+        }
     }
 
 }
