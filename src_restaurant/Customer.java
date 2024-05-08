@@ -6,8 +6,10 @@ public class Customer {
     private int minTimeEat;
     private int maxTimeEat;
     private int currentActionTimeLeft;
+    private String name;
 
-    public Customer(String paymentMethod, String foodType, int minTimeEat, int maxTimeEat, int currentActionTimeLeft) {
+    public Customer(String name,String paymentMethod, String foodType, int minTimeEat, int maxTimeEat, int currentActionTimeLeft) {
+        this.name=name;
         this.paymentMethod = paymentMethod;
         this.foodType = foodType;
         this.minTimeEat = minTimeEat;
@@ -43,7 +45,12 @@ public class Customer {
     public int getMaxTimeEat() {
         return maxTimeEat;
     }
-
+    public String getName(){
+        return this.name;
+    }
+    public void setName(String name){
+        this.name=name;
+    }
     public void setMaxTimeEat(int maxTimeEat) {
         this.maxTimeEat = maxTimeEat;
     }

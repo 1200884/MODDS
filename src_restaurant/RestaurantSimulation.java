@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Random;
 
 public class RestaurantSimulation {
-    private final int SIMULATION_DURATION = 5;
+    private final int SIMULATION_DURATION = 15;
     private final int NUMBER_OF_TABLES = 2;
     private final int NUMBER_OF_WAITRESSES = 3;
     private final int NUMBER_OF_MEAT_COOKERS = 2;
@@ -93,7 +93,7 @@ public class RestaurantSimulation {
             System.out.println("-----EMPREGADOS DE MESA-----");
             for(Waitress waitress : waitresses){
                 String status = waitress.isAvailable() ? "Disponível" : "Ocupado";
-                System.out.println("Empregado de mesa " + waitress.getName() + " está " + status);
+                System.out.println(waitress.getName() + " está " + status);
             }
             System.out.println("-----MESAS-----");
             for(Table table : tables){
@@ -176,10 +176,11 @@ public class RestaurantSimulation {
         if(customerQueue.size() < MAX_CUSTOMER_QUEUE_ALLOW && isRestaurantOpen){
             int numberOfCustomers = random.nextInt(5) + 1;
             if(random.nextInt(101) < 40){
-                System.out.println("Chegaram " + numberOfCustomers + " clientes.");
+                System.out.println("Chegaram " + numberOfCustomers + " clientes:");
                 for(int i = 0; i < numberOfCustomers; i++){
                     Customer customer = generateCustomer();
                     customerQueue.add(customer);
+                    System.out.println(i+" - "+customer.getName());
                 }
             }
         }else{
@@ -226,6 +227,7 @@ public class RestaurantSimulation {
                     cooker.setAvailable(true);
                 }else{
                     System.out.println("Cozinheiro " + cooker.getName() + " ainda vai demorar " + cooker.getCurrentActionTimeLeft() + " instantes a acabar o pedido de carne que está a fazer");
+                    
                 }
             }
         }
@@ -252,7 +254,9 @@ public class RestaurantSimulation {
                     readyFishDishOrder.add(fishDish);
                     cooker.setAvailable(true);
                 }else{
+                    //fishDishOrder.add(fishDish);
                     System.out.println("Cozinheiro " + cooker.getName() + " ainda vai demorar " + cooker.getCurrentActionTimeLeft() + " instantes a acabar o pedido de peixe que está a fazer");
+                    
                 }
             }
         }
@@ -294,6 +298,7 @@ public class RestaurantSimulation {
                     for(Customer customer : table.getCustomersUsingTable()){
                         int eatingTime = random.nextInt(customer.getMaxTimeEat() - customer.getMinTimeEat()) + customer.getMinTimeEat();
                         customer.setCurrentActionTimeLeft(eatingTime);
+                        System.out.println(customer.getName()+" acabou de receber o seu pedido e vai demorar "+eatingTime+" instantes a acabá-lo");
                     }
 
                     table.setServed(true);
@@ -303,14 +308,14 @@ public class RestaurantSimulation {
                 System.out.println("-----CLIENTES A COMER NA MESA " + table.getTableNum() + "-----");
                 for(Customer customer : table.getCustomersUsingTable()){
                     customer.decreaseCurrentActionTimeLeft();
-                    System.out.println("Faltam " + customer.getCurrentActionTimeLeft() + " tempos");
+                    System.out.println("Faltam " + customer.getCurrentActionTimeLeft() + " instantes para o "+customer.getName()+" acabar a sua refeição");
                     if(customer.getCurrentActionTimeLeft() <= 0){
                         customersAlreadyEat++;
                     }
                 }
 
                 if(customersAlreadyEat == table.getCustomersUsingTable().size() && !table.isAlreadyBeingCleaned()){
-                    System.out.println("Todas as pessoas da mesa " + table.getTableNum() + " já comeram");
+                    System.out.println("Todas os clientes da mesa " + table.getTableNum() + " já comeram");
                     table.setNeedsToBePreparedForNextCustomers(true);
                 }
             }
@@ -321,12 +326,12 @@ public class RestaurantSimulation {
             if(waitress.isAvailable()){
                 for(Table table : tables){
                     if(table.needsToBePreparedForNextCustomers()){
-                        System.out.println("Empregado de mesa " + waitress.getName() + " vai começar a limpar a mesa " + table.getTableNum());
+                        System.out.println(waitress.getName() + " vai começar a limpar a mesa " + table.getTableNum());
                         prepareTableToNextCustomers(waitress, table);
                     }
                 }
             }else{
-                System.out.println("Empregado de mesa " + waitress.getName() + " ainda vai demorar " + waitress.getCurrentActionTimeLeft() + " instantes a acabar de limpar a mesa");
+                System.out.println(waitress.getName() + " ainda vai demorar " + waitress.getCurrentActionTimeLeft() + " instantes a acabar de limpar a mesa");
                 waitress.decreaseCurrentActionTimeLeft();
                 if(waitress.getCurrentActionTimeLeft()==0){
                     Table table = findTableWorkingOnPerWaitress(waitress);
@@ -343,9 +348,10 @@ public class RestaurantSimulation {
                 Customer customer = customerPayingQueue.keySet().iterator().next();
                 startPaymentProcess(paymentEmployee, customer.getPaymentMethod(), customerPayingQueue.get(customer));
                 customerPayingQueue.remove(customer);
+                System.out.println("O cliente " + customer.getName()+" vai começar o processo de pagamento");
             }else if(paymentEmployee.getCurrentActionTimeLeft() != 0){
                 paymentEmployee.decreaseCurrentActionTimeLeft();
-                System.out.println("Empregado de pagamento está a prosseguir com o processo de pagamento e ainda vai demorar " + paymentEmployee.getCurrentActionTimeLeft() + " instantes");
+                System.out.println(paymentEmployee.getName()+ " está a prosseguir com o processo de pagamento e ainda vai demorar " +paymentEmployee.getCurrentActionTimeLeft()+" instantes");
                 if (paymentEmployee.getCurrentActionTimeLeft() == 0) {
                     paymentEmployee.setAvailable(true);
                 }
@@ -366,7 +372,7 @@ public class RestaurantSimulation {
         waitresses = new ArrayList<>();
         for(int i = 0; i < NUMBER_OF_WAITRESSES; i++){
             int number = random.nextInt(3-2) + 2;
-            Waitress waitress = new Waitress(getRandomName(), number, number + 3,0,0, true);
+            Waitress waitress = new Waitress("Empregado de Mesa " + getRandomName(), number, number + 3,0,0, true);
             waitresses.add(waitress);
         }
     }
@@ -376,13 +382,13 @@ public class RestaurantSimulation {
         fishCookers = new ArrayList<>();
         for(int i = 0; i < NUMBER_OF_MEAT_COOKERS; i++){
             int number = random.nextInt(6-3) + 3;
-            Cooker cooker = new Cooker(getRandomName(), "Meat", number, number + 3,0,true);
+            Cooker cooker = new Cooker("Cozinheiro " + getRandomName(), "Meat", number, number + 3,0,true);
             meatCookers.add(cooker);
         }
 
         for(int i = 0; i < NUMBER_OF_FISH_COOKERS; i++){
             int number = random.nextInt(6-3) + 3;
-            Cooker cooker = new Cooker(getRandomName(), "Fish", number, number + 3,0,true);
+            Cooker cooker = new Cooker("Cozinheiro " + getRandomName(), "Fish", number, number + 3,0,true);
             fishCookers.add(cooker);
         }
     }
@@ -391,7 +397,7 @@ public class RestaurantSimulation {
         paymentEmployees = new ArrayList<>();
         for(int i = 0; i < NUMBER_OF_PAYMENT_EMPLOYEES; i++){
             int number = random.nextInt(3-2) + 2;
-            PaymentEmployee paymentEmployee = new PaymentEmployee(getRandomName(), number, number + 1, number + 2, number + 3, 0, true);
+            PaymentEmployee paymentEmployee = new PaymentEmployee("Empregado de pagamento " + getRandomName(), number, number + 1, number + 2, number + 3, 0, true);
             paymentEmployees.add(paymentEmployee);
         }
     }
@@ -401,11 +407,11 @@ public class RestaurantSimulation {
         String paymentMethod = random.nextInt(10) + 1 < 5 ? "Card" : "Money";
         String foodType = random.nextInt(10) + 1 < 5 ? "Meat" : "Fish";
 
-        return new Customer(paymentMethod, foodType, number, number + 1,0);
+        return new Customer("Cliente " + this.getRandomName(),paymentMethod, foodType, number, number + 1,0);
     }
 
     public String getRandomName() {
-        String[] NAMES = {"Jack", "John", "David", "Emily", "Emma", "Sophia", "Olivia", "Ava", "Isabella", "Mia", "Ethan", "Noah", "Liam", "Mason", "Lucas", "Oliver", "Elijah", "James", "Benjamin", "Alexander"};
+        String[] NAMES = {"Jack", "John", "David", "Emily", "Emma", "Sophia", "Olivia", "Ava", "Isabella", "Mia", "Ethan", "Noah", "Liam", "Mason", "Lucas", "Oliver", "Elijah", "James", "Benjamin", "Alexander", "Alfredo", "Gervásio", "Gertrudes", "Roberto", "Jeremias", "Fernando", "Nelson"};
         int index = random.nextInt(NAMES.length);
         return NAMES[index];
     }
@@ -496,9 +502,13 @@ public class RestaurantSimulation {
             if(dish.getFoodType().equalsIgnoreCase("Meat")){
                 meatDishOrder.add(dish);
                 meatAux++;
+                meatDishOrder.add(meatDish);
+
             }else{
                 fishDishOrder.add(dish);
                 fishAux++;
+                fishDishOrder.add(fishDish);
+
             }
         }
 
@@ -511,11 +521,11 @@ public class RestaurantSimulation {
         
         if(paymentMethod.equalsIgnoreCase("Card")){
             int time = random.nextInt(paymentEmployee.getMaxTimeExecCard() - paymentEmployee.getMinTimeExecCard()) + paymentEmployee.getMinTimeExecCard();
-            System.out.println("Empregado de pagamento vai começar processo de pagamento de um cliente que vai pagar em Cartão. Vai demorar " + time + " instantes.");
+            System.out.println(paymentEmployee.getName()+" vai começar processo de pagamento de um cliente que vai pagar em Cartão. Vai demorar " + time + " instantes.");
             paymentEmployee.setCurrentActionTimeLeft(time);
         }else{
             int time = random.nextInt(paymentEmployee.getMaxTimeExecMoney() - paymentEmployee.getMinTimeExecMoney()) + paymentEmployee.getMinTimeExecMoney();
-            System.out.println("Empregado de pagamento vai começar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar " + time + " instantes.");
+            System.out.println(paymentEmployee.getName()+" vai começar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar " + time + " instantes.");
             paymentEmployee.setCurrentActionTimeLeft(time);
         }
 
