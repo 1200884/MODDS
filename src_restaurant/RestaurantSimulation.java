@@ -7,13 +7,13 @@ import java.util.Map;
 import java.util.Random;
 
 public class RestaurantSimulation {
-    private final int SIMULATION_DURATION = 15;
-    private final int NUMBER_OF_TABLES = 2;
+    private final int SIMULATION_DURATION = 10;
+    private final int NUMBER_OF_TABLES = 10;
     private final int NUMBER_OF_WAITRESSES = 3;
     private final int NUMBER_OF_MEAT_COOKERS = 2;
     private final int NUMBER_OF_FISH_COOKERS = 2;
     private final int NUMBER_OF_PAYMENT_EMPLOYEES = 1;
-    private final int MAX_CUSTOMER_QUEUE_ALLOW = 20;
+    private final int MAX_CUSTOMER_QUEUE_ALLOW = 10;
 
     private boolean isRestaurantOpen = true;
     private boolean allTasksCompleted = false;
@@ -174,7 +174,7 @@ public class RestaurantSimulation {
         
         //Determina se chegaram ou não novos clientes
         if(customerQueue.size() < MAX_CUSTOMER_QUEUE_ALLOW && isRestaurantOpen){
-            int numberOfCustomers = random.nextInt(5) + 1;
+            int numberOfCustomers = random.nextInt(6 - 1) + 1;
             if(random.nextInt(101) < 40){
                 System.out.println("Chegaram " + numberOfCustomers + " clientes:");
                 for(int i = 0; i < numberOfCustomers; i++){
@@ -192,7 +192,7 @@ public class RestaurantSimulation {
         //Empregado a sentar clientes
         for(Waitress waitress : waitresses){
             if(waitress.isAvailable() && !customerQueue.isEmpty()){
-                int partySize = random.nextInt(4) + 1;
+                int partySize = random.nextInt(6 - 1) + 1;
                 if(partySize > customerQueue.size()){
                     partySize = customerQueue.size();
                 }
@@ -227,7 +227,6 @@ public class RestaurantSimulation {
                     cooker.setAvailable(true);
                 }else{
                     System.out.println("Cozinheiro " + cooker.getName() + " ainda vai demorar " + cooker.getCurrentActionTimeLeft() + " instantes a acabar o pedido de carne que está a fazer");
-                    
                 }
             }
         }
@@ -254,9 +253,7 @@ public class RestaurantSimulation {
                     readyFishDishOrder.add(fishDish);
                     cooker.setAvailable(true);
                 }else{
-                    //fishDishOrder.add(fishDish);
                     System.out.println("Cozinheiro " + cooker.getName() + " ainda vai demorar " + cooker.getCurrentActionTimeLeft() + " instantes a acabar o pedido de peixe que está a fazer");
-                    
                 }
             }
         }
@@ -502,13 +499,10 @@ public class RestaurantSimulation {
             if(dish.getFoodType().equalsIgnoreCase("Meat")){
                 meatDishOrder.add(dish);
                 meatAux++;
-                meatDishOrder.add(meatDish);
 
             }else{
                 fishDishOrder.add(dish);
                 fishAux++;
-                fishDishOrder.add(fishDish);
-
             }
         }
 
