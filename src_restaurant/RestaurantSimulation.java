@@ -19,6 +19,9 @@ public class RestaurantSimulation {
     private boolean allTasksCompleted = false;
 
     int currentTime = 1;
+    int minute = 0;
+    int hour = 19;
+
     private int moneyEarned = 0;
     private int numberOfMeatDishesOfTheDay = 0;
     private int numberOfFishDishesOfTheDay = 0;
@@ -52,8 +55,8 @@ public class RestaurantSimulation {
         meatDish = new Dish("Meat", 10, 20, 6);
         fishDish = new Dish("Fish", 12, 25, 8);
 
-        System.out.println("-----SIMULAÇÃO DE RESTAURANTE-----");
-        System.out.println("No dia de hoje o restaurante tem disponíveis " + tables.size() + " mesas que podem ter até 4 clientes.");
+        System.out.println("-----SIMULACAO DE RESTAURANTE-----");
+        System.out.println("No dia de hoje o restaurante tem disponiveis " + tables.size() + " mesas que podem ter ate 4 clientes.");
         System.out.println("Hoje os pratos de carne custam " + meatDish.getPrice() + " euros e os pratos de peixe custam " + fishDish.getPrice() + " euros");
         System.out.println();
         System.out.println("COZINHEIROS NO RESTAURANTE");
@@ -83,7 +86,16 @@ public class RestaurantSimulation {
 
         while(currentTime <= SIMULATION_DURATION || !allTasksCompleted){
             System.out.println("--------------------------------------------------");
-            System.out.println("Time: " + currentTime);
+            if(minute==60){
+                minute = 0;
+                hour++;
+            }
+            System.out.println("Instante: " + currentTime);
+            if(minute<10){
+                System.out.println("Hora: " + hour + ":0" + minute);
+            }else{
+                System.out.println("Hora: " + hour + ":" + minute);
+            }
             if(isRestaurantOpen){
                 System.out.println("Restaurante encontra-se aberto");
             }else{
@@ -92,13 +104,13 @@ public class RestaurantSimulation {
             System.out.println("Tamanho da fila: " + customerQueue.size());
             System.out.println("-----EMPREGADOS DE MESA-----");
             for(Waitress waitress : waitresses){
-                String status = waitress.isAvailable() ? "Disponível" : "Ocupado";
-                System.out.println(waitress.getName() + " está " + status);
+                String status = waitress.isAvailable() ? "Disponivel" : "Ocupado";
+                System.out.println(waitress.getName() + " esta " + status);
             }
             System.out.println("-----MESAS-----");
             for(Table table : tables){
-                String status = table.isAvailable() ? "Disponível" : "Ocupada";
-                System.out.println("Mesa " + table.getTableNum() + " está " + status);
+                String status = table.isAvailable() ? "Disponivel" : "Ocupada";
+                System.out.println("Mesa " + table.getTableNum() + " esta " + status);
             }
 
             Thread.sleep(1000);
@@ -107,6 +119,7 @@ public class RestaurantSimulation {
             System.out.println("--------------------------------------------------");
 
             currentTime++;
+            minute++;
 
             if(currentTime > SIMULATION_DURATION){
                 isRestaurantOpen = false;
@@ -116,66 +129,16 @@ public class RestaurantSimulation {
 
         System.out.println();
         System.out.println("-----DINHEIRO GANHO = " + moneyEarned + "-----");
-        System.out.println("-----NÚMERO DE PRATOS DE CARNE FEITOS = " + numberOfMeatDishesOfTheDay + "-----");
-        System.out.println("-----NÚMERO DE PRATOS DE PEIXE FEITOS = " + numberOfFishDishesOfTheDay + "-----");
+        System.out.println("-----NUMERO DE PRATOS DE CARNE FEITOS = " + numberOfMeatDishesOfTheDay + "-----");
+        System.out.println("-----NUMERO DE PRATOS DE PEIXE FEITOS = " + numberOfFishDishesOfTheDay + "-----");
     }
-
-    /*
-    public void printInstantInformation(){
-        System.out.println("Instante: " + currentTime);
-        System.out.println("Número de pessoas na fila: " + customerQueue.size());
-        System.out.println();
-        System.out.println("-----EMPREGADOS DE MESA-----");
-        for(Waitress waitress : waitresses){
-            if(!waitress.isAvailable()){
-                System.out.println("Empregado de mesa " + waitress.getName() + " está a limpar a mesa " + waitress.getNumTableWorkingOn() + " e ainda vai demorar " + waitress.getCurrentActionTimeLeft() + " instantes a acabar.");
-            }else{
-                System.out.println("Empregado de mesa " + waitress.getName() + " está Disponível.");
-            }
-        }
-        System.out.println();
-        System.out.println("----COZINHEIROS-----");
-        for(Cooker cooker : meatCookers){
-            if(!cooker.isAvailable()){
-                System.out.println("Cozinheiro " + cooker.getName() + " está a preparar um pedido de carne que vai demorar " + cooker.getCurrentActionTimeLeft() + " instantes a acabar.");
-            }else{
-                System.out.println("Cozinheiro " + cooker.getName() + " está Disponível");
-            }
-        }
-        System.out.println();
-        System.out.println("-----PEDIDOS-----");
-        System.out.println("Pedidos de carne em espera: " + meatDishOrder.size());
-        System.out.println("Pedidos de peixe em espera: " + fishDishOrder.size());
-        System.out.println("Pedidos de carne prontos: " + readyMeatDishOrder.size());
-        System.out.println("Pedidos de carne prontos: " + readyFishDishOrder.size());
-        System.out.println();
-        System.out.println("-----EMPREGADOS DE PAGAMENTO-----");
-        for(PaymentEmployee paymentEmployee : paymentEmployees){
-            if(!paymentEmployee.isAvailable()){
-                System.out.println("Empregado de pagamento " + paymentEmployee.getName() + " está a realizar um processo de pagamento. Vai demorar " + paymentEmployee.getCurrentActionTimeLeft() + " instantes a acabar.");
-            }
-        }
-        System.out.println();
-        System.out.println("-----MESAS-----");
-        for(Table table : tables){
-            if(table.isAvailable()){
-                System.out.println("Mesa " + table.getTableNum() + " está Disponível");
-            }else if(table.isAlreadyBeingCleaned){
-                System.out.println("Mesa " + table.getTableNum() + " está a ser Limpa");
-            }else{
-                System.out.println("Mesa " + table.getTableNum() + " está Ocupada");
-            }
-        }
-        System.out.println();
-    }
-    */
 
     public void simulateMinute() throws InterruptedException{
         
-        //Determina se chegaram ou não novos clientes
+        //Determina se chegaram ou nao novos clientes
         if(customerQueue.size() < MAX_CUSTOMER_QUEUE_ALLOW && isRestaurantOpen){
             int numberOfCustomers = random.nextInt(6 - 1) + 1;
-            if(random.nextInt(101) < 40){
+            if(random.nextInt(101) < 101){
                 System.out.println("Chegaram " + numberOfCustomers + " clientes:");
                 for(int i = 0; i < numberOfCustomers; i++){
                     Customer customer = generateCustomer();
@@ -200,7 +163,7 @@ public class RestaurantSimulation {
                 int availableTablesAtTheMoment = getNumOfAvailableTablesAtTheMoment();
 
                 if(partySize > 4 && availableTablesAtTheMoment >= 2){
-                    //clientes podem entrar porque se vão juntar duas mesas para eles
+                    //clientes podem entrar porque se vao juntar duas mesas para eles
                     Table table = giveTablesToClient(partySize);
                     System.out.println("Mesa para " + partySize);
                     retrieveOrdersFromTable(table);
@@ -209,10 +172,10 @@ public class RestaurantSimulation {
                     System.out.println("Mesa para " + partySize);
                     retrieveOrdersFromTable(table);
                 }else{
-                    //Não há mesas suficientes
+                    //Nao ha mesas suficientes
                 }
             }else{
-                //Nenhum empregado de mesa disponível
+                //Nenhum empregado de mesa disponivel
             }
         }
 
@@ -226,7 +189,7 @@ public class RestaurantSimulation {
                     readyMeatDishOrder.add(meatDish);
                     cooker.setAvailable(true);
                 }else{
-                    System.out.println("Cozinheiro " + cooker.getName() + " ainda vai demorar " + cooker.getCurrentActionTimeLeft() + " instantes a acabar o pedido de carne que está a fazer");
+                    System.out.println("Cozinheiro " + cooker.getName() + " ainda vai demorar " + cooker.getCurrentActionTimeLeft() + " instantes a acabar o pedido de carne que esta a fazer");
                 }
             }
         }
@@ -253,7 +216,7 @@ public class RestaurantSimulation {
                     readyFishDishOrder.add(fishDish);
                     cooker.setAvailable(true);
                 }else{
-                    System.out.println("Cozinheiro " + cooker.getName() + " ainda vai demorar " + cooker.getCurrentActionTimeLeft() + " instantes a acabar o pedido de peixe que está a fazer");
+                    System.out.println("Cozinheiro " + cooker.getName() + " ainda vai demorar " + cooker.getCurrentActionTimeLeft() + " instantes a acabar o pedido de peixe que esta a fazer");
                 }
             }
         }
@@ -295,7 +258,7 @@ public class RestaurantSimulation {
                     for(Customer customer : table.getCustomersUsingTable()){
                         int eatingTime = random.nextInt(customer.getMaxTimeEat() - customer.getMinTimeEat()) + customer.getMinTimeEat();
                         customer.setCurrentActionTimeLeft(eatingTime);
-                        System.out.println(customer.getName()+" acabou de receber o seu pedido e vai demorar "+eatingTime+" instantes a acabá-lo");
+                        System.out.println(customer.getName()+" acabou de receber o seu pedido e vai demorar "+eatingTime+" instantes a acaba-lo");
                     }
 
                     table.setServed(true);
@@ -305,14 +268,14 @@ public class RestaurantSimulation {
                 System.out.println("-----CLIENTES A COMER NA MESA " + table.getTableNum() + "-----");
                 for(Customer customer : table.getCustomersUsingTable()){
                     customer.decreaseCurrentActionTimeLeft();
-                    System.out.println("Faltam " + customer.getCurrentActionTimeLeft() + " instantes para o "+customer.getName()+" acabar a sua refeição");
+                    System.out.println("Faltam " + customer.getCurrentActionTimeLeft() + " instantes para o "+customer.getName()+" acabar a sua refeicao");
                     if(customer.getCurrentActionTimeLeft() <= 0){
                         customersAlreadyEat++;
                     }
                 }
 
                 if(customersAlreadyEat == table.getCustomersUsingTable().size() && !table.isAlreadyBeingCleaned()){
-                    System.out.println("Todas os clientes da mesa " + table.getTableNum() + " já comeram");
+                    System.out.println("Todas os clientes da mesa " + table.getTableNum() + " ja comeram");
                     table.setNeedsToBePreparedForNextCustomers(true);
                 }
             }
@@ -322,13 +285,15 @@ public class RestaurantSimulation {
         for(Waitress waitress : waitresses){
             if(waitress.isAvailable()){
                 for(Table table : tables){
-                    if(table.needsToBePreparedForNextCustomers()){
-                        System.out.println(waitress.getName() + " vai começar a limpar a mesa " + table.getTableNum());
-                        prepareTableToNextCustomers(waitress, table);
+                    if(waitress.isAvailable){
+                        if(table.needsToBePreparedForNextCustomers()){
+                            System.out.println(waitress.getName() + " vai comecar a limpar a mesa " + table.getTableNum());
+                            prepareTableToNextCustomers(waitress, table);
+                        }
                     }
                 }
             }else{
-                System.out.println(waitress.getName() + " ainda vai demorar " + waitress.getCurrentActionTimeLeft() + " instantes a acabar de limpar a mesa");
+                System.out.println(waitress.getName() + " ainda vai demorar " + waitress.getCurrentActionTimeLeft() + " instantes a acabar de limpar a mesa " + waitress.getNumTableWorkingOn());
                 waitress.decreaseCurrentActionTimeLeft();
                 if(waitress.getCurrentActionTimeLeft()==0){
                     Table table = findTableWorkingOnPerWaitress(waitress);
@@ -345,12 +310,46 @@ public class RestaurantSimulation {
                 Customer customer = customerPayingQueue.keySet().iterator().next();
                 startPaymentProcess(paymentEmployee, customer.getPaymentMethod(), customerPayingQueue.get(customer));
                 customerPayingQueue.remove(customer);
-                System.out.println("O cliente " + customer.getName()+" vai começar o processo de pagamento");
+                System.out.println("O cliente " + customer.getName()+" vai comecar o processo de pagamento");
             }else if(paymentEmployee.getCurrentActionTimeLeft() != 0){
                 paymentEmployee.decreaseCurrentActionTimeLeft();
-                System.out.println(paymentEmployee.getName()+ " está a prosseguir com o processo de pagamento e ainda vai demorar " +paymentEmployee.getCurrentActionTimeLeft()+" instantes");
                 if (paymentEmployee.getCurrentActionTimeLeft() == 0) {
+                    System.out.println(paymentEmployee.getName()+ " acabou o processo de pagamento");
                     paymentEmployee.setAvailable(true);
+                }else{
+                    System.out.println(paymentEmployee.getName()+ " esta a prosseguir com o processo de pagamento e ainda vai demorar " +paymentEmployee.getCurrentActionTimeLeft()+" instantes");
+                }
+            }
+        }
+    }
+
+    public void printTablesInformation(){
+        for(Table table : tables){
+            System.out.println("-----MESA " + table.getTableNum() + "-----");
+            if(table.getCustomersUsingTable().isEmpty()){
+                System.out.println("DISPONIVEL");
+            }else if(table.isAlreadyBeingCleaned){
+                for(Waitress waitress : waitresses){
+                    if(waitress.getNumTableWorkingOn() == table.getTableNum()){
+                        System.out.println("Mesa a ser limpa pelo " + waitress);
+                    }
+                }
+            }else if(table.isTableBeingUsedAsSecondTable()){
+                for(Table table2 : tables){
+                    if(table != table2 && table2.isTableBeingUsedAsSecondTable() && table2.getCustomersUsingTable() == table.getCustomersUsingTable()){
+                        System.out.println("Esta mesa foi juntada a mesa " + table2.getTableNum());
+                    }
+                }
+                System.out.println("Mesa foi servida? -> " + (table.isServed() ? "Sim" : "Nao"));
+                System.out.println("Clientes na mesa:");
+                for(Customer customer : table.getCustomersUsingTable()){
+                    System.out.println(customer.getName() + " vai demorar " + customer.getCurrentActionTimeLeft() + " instantes a acabar de comer");
+                }
+            }else{
+                System.out.println("Mesa foi servida? -> " + (table.isServed() ? "Sim" : "Nao"));
+                System.out.println("Clientes na mesa:");
+                for(Customer customer : table.getCustomersUsingTable()){
+                    System.out.println(customer.getName() + " vai demorar " + customer.getCurrentActionTimeLeft() + " instantes a acabar de comer");
                 }
             }
         }
@@ -393,8 +392,7 @@ public class RestaurantSimulation {
     public void getPaymentEmployees(){
         paymentEmployees = new ArrayList<>();
         for(int i = 0; i < NUMBER_OF_PAYMENT_EMPLOYEES; i++){
-            int number = random.nextInt(3-2) + 2;
-            PaymentEmployee paymentEmployee = new PaymentEmployee("Empregado de pagamento " + getRandomName(), number, number + 1, number + 2, number + 3, 0, true);
+            PaymentEmployee paymentEmployee = new PaymentEmployee("Empregado de pagamento " + getRandomName(), 1, 2, 2, 3, 0, true);
             paymentEmployees.add(paymentEmployee);
         }
     }
@@ -408,7 +406,7 @@ public class RestaurantSimulation {
     }
 
     public String getRandomName() {
-        String[] NAMES = {"Jack", "John", "David", "Emily", "Emma", "Sophia", "Olivia", "Ava", "Isabella", "Mia", "Ethan", "Noah", "Liam", "Mason", "Lucas", "Oliver", "Elijah", "James", "Benjamin", "Alexander", "Alfredo", "Gervásio", "Gertrudes", "Roberto", "Jeremias", "Fernando", "Nelson"};
+        String[] NAMES = {"Jack", "John", "David", "Emily", "Emma", "Sophia", "Olivia", "Ava", "Isabella", "Mia", "Ethan", "Noah", "Liam", "Mason", "Lucas", "Oliver", "Elijah", "James", "Benjamin", "Alexander", "Alfredo", "Gervasio", "Gertrudes", "Roberto", "Jeremias", "Fernando", "Nelson"};
         int index = random.nextInt(NAMES.length);
         return NAMES[index];
     }
@@ -456,6 +454,7 @@ public class RestaurantSimulation {
                     aux++;
                     if(aux==1){
                         tableToReturn = table;
+                        tableToReturn.setIsTableBeingUsedAsSecondTable(true);
                     }
                 }
 
@@ -515,11 +514,11 @@ public class RestaurantSimulation {
         
         if(paymentMethod.equalsIgnoreCase("Card")){
             int time = random.nextInt(paymentEmployee.getMaxTimeExecCard() - paymentEmployee.getMinTimeExecCard()) + paymentEmployee.getMinTimeExecCard();
-            System.out.println(paymentEmployee.getName()+" vai começar processo de pagamento de um cliente que vai pagar em Cartão. Vai demorar " + time + " instantes.");
+            System.out.println(paymentEmployee.getName()+" vai comecar processo de pagamento de um cliente que vai pagar em Cartao. Vai demorar " + time + " instantes.");
             paymentEmployee.setCurrentActionTimeLeft(time);
         }else{
             int time = random.nextInt(paymentEmployee.getMaxTimeExecMoney() - paymentEmployee.getMinTimeExecMoney()) + paymentEmployee.getMinTimeExecMoney();
-            System.out.println(paymentEmployee.getName()+" vai começar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar " + time + " instantes.");
+            System.out.println(paymentEmployee.getName()+" vai comecar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar " + time + " instantes.");
             paymentEmployee.setCurrentActionTimeLeft(time);
         }
 
@@ -559,7 +558,7 @@ public class RestaurantSimulation {
     public void prepareTableToNextCustomers(Waitress waitress, Table table){
         int workingTime = random.nextInt(waitress.getMaxTimeExec() - waitress.getMinTimeExec()) + waitress.getMinTimeExec();
 
-        waitress.setAvailable(false);
+        waitress.isAvailable = false;
         waitress.setCurrentActionTimeLeft(workingTime);
         waitress.setNumTableWorkingOn(table.getTableNum());
         table.setNeedsToBePreparedForNextCustomers(false);
@@ -607,7 +606,7 @@ public class RestaurantSimulation {
     public void checkIfAllTasksWereCompleted(){
         boolean checkIfItsAllOk = true;
         for(Table table : tables){
-            if(!table.getCustomersUsingTable().isEmpty()){
+            if(!table.getCustomersUsingTable().isEmpty() || !table.isAvailable()){
                 checkIfItsAllOk = false;
             }
         }

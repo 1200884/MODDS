@@ -1,0 +1,2441 @@
+-----SIMULACAO DE RESTAURANTE-----
+No dia de hoje o restaurante tem disponiveis 10 mesas que podem ter ate 4 clientes.
+Hoje os pratos de carne custam 6 euros e os pratos de peixe custam 8 euros
+
+COZINHEIROS NO RESTAURANTE
+Cozinheiro Gertrudes com especialidade em carne
+Cozinheiro Jack com especialidade em carne
+Cozinheiro Nelson com especialidade em peixe
+Cozinheiro Benjamin com especialidade em peixe
+
+EMPREGADOS DE MESA NO RESTAURANTE
+Empregado de Mesa Mason
+Empregado de Mesa Nelson
+Empregado de Mesa Lucas
+
+EMPREGADOS DE PAGAMENTO NO RESTAURANTE
+Empregado de pagamento Ethan
+
+
+
+
+--------------------------------------------------
+Instante: 1
+Hora: 19:00
+Restaurante encontra-se aberto
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Disponivel
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Disponivel
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+Chegaram 2 clientes:
+0 - Cliente John
+1 - Cliente Sophia
+Mesa para 2
+0 pedidos de carne
+2 pedidos de peixe
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson vai pegar num pedido de peixe que vai demorar 7 instantes a acabar
+Cozinheiro Cozinheiro Benjamin vai pegar num pedido de peixe que vai demorar 6 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+--------------------------------------------------
+--------------------------------------------------
+Instante: 2
+Hora: 19:01
+Restaurante encontra-se aberto
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Disponivel
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Disponivel
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+Chegaram 4 clientes:
+0 - Cliente Elijah
+1 - Cliente Mia
+2 - Cliente Jack
+3 - Cliente Alexander
+Mesa para 3
+0 pedidos de carne
+3 pedidos de peixe
+Mesa para 1
+1 pedidos de carne
+0 pedidos de peixe
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes vai pegar num pedido de carne que vai demorar 5 instantes a acabar
+Cozinheiro Cozinheiro Nelson ainda vai demorar 6 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 5 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 3
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+--------------------------------------------------
+--------------------------------------------------
+Instante: 3
+Hora: 19:02
+Restaurante encontra-se aberto
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Disponivel
+Mesa 5 esta Disponivel
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+Chegaram 5 clientes:
+0 - Cliente Benjamin
+1 - Cliente Mia
+2 - Cliente Jeremias
+3 - Cliente Ethan
+4 - Cliente Fernando
+Mesa para 2
+0 pedidos de carne
+2 pedidos de peixe
+Mesa para 3
+0 pedidos de carne
+3 pedidos de peixe
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 4 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson ainda vai demorar 5 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 8
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+--------------------------------------------------
+--------------------------------------------------
+Instante: 4
+Hora: 19:03
+Restaurante encontra-se aberto
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+Chegaram 2 clientes:
+0 - Cliente Jack
+1 - Cliente Ava
+Mesa para 2
+0 pedidos de carne
+2 pedidos de peixe
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 3 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 10
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+--------------------------------------------------
+--------------------------------------------------
+Instante: 5
+Hora: 19:04
+Restaurante encontra-se aberto
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+Chegaram 1 clientes:
+0 - Cliente Roberto
+Mesa para 1
+0 pedidos de carne
+1 pedidos de peixe
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 2 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 11
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+--------------------------------------------------
+--------------------------------------------------
+Instante: 6
+Hora: 19:05
+Restaurante encontra-se aberto
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+Chegaram 4 clientes:
+0 - Cliente Nelson
+1 - Cliente Elijah
+2 - Cliente Gertrudes
+3 - Cliente Isabella
+Mesa para 3
+2 pedidos de carne
+1 pedidos de peixe
+Mesa para 1
+0 pedidos de carne
+1 pedidos de peixe
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 1 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Jack vai pegar num pedido de carne que vai demorar 5 instantes a acabar
+Cozinheiro Cozinheiro Nelson ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 1
+Pedidos de peixe em espera: 13
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+--------------------------------------------------
+--------------------------------------------------
+Instante: 7
+Hora: 19:06
+Restaurante encontra-se aberto
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Disponivel
+Chegaram 3 clientes:
+0 - Cliente Olivia
+1 - Cliente Emma
+2 - Cliente Lucas
+Mesa para 3
+1 pedidos de carne
+2 pedidos de peixe
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes acabou um pedido de carne
+Cozinheiro Cozinheiro Jack ainda vai demorar 4 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Gertrudes vai pegar num pedido de carne que vai demorar 3 instantes a acabar
+Cozinheiro Cozinheiro Nelson ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin vai pegar num pedido de peixe que vai demorar 4 instantes a acabar
+Pedidos de carne em espera: 1
+Pedidos de peixe em espera: 14
+Pedidos de carne prontos: 1
+Pedidos de peixe prontos: 1
+Cliente Alexander acabou de receber o seu pedido e vai demorar 3 instantes a acaba-lo
+Cliente Roberto acabou de receber o seu pedido e vai demorar 3 instantes a acaba-lo
+--------------------------------------------------
+--------------------------------------------------
+Instante: 8
+Hora: 19:07
+Restaurante encontra-se aberto
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+Chegaram 4 clientes:
+0 - Cliente Roberto
+1 - Cliente Oliver
+2 - Cliente Elijah
+3 - Cliente Olivia
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 2 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Jack ainda vai demorar 3 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Nelson vai pegar num pedido de peixe que vai demorar 6 instantes a acabar
+Pedidos de carne em espera: 1
+Pedidos de peixe em espera: 13
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 3-----
+Faltam 2 instantes para o Cliente Alexander acabar a sua refeicao
+-----CLIENTES A COMER NA MESA 7-----
+Faltam 2 instantes para o Cliente Roberto acabar a sua refeicao
+Cliente Isabella acabou de receber o seu pedido e vai demorar 2 instantes a acaba-lo
+--------------------------------------------------
+--------------------------------------------------
+Instante: 9
+Hora: 19:08
+Restaurante encontra-se aberto
+Tamanho da fila: 4
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+Chegaram 5 clientes:
+0 - Cliente Mia
+1 - Cliente Roberto
+2 - Cliente John
+3 - Cliente Jack
+4 - Cliente Mia
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 1 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Jack ainda vai demorar 2 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson ainda vai demorar 5 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 1
+Pedidos de peixe em espera: 13
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+-----CLIENTES A COMER NA MESA 3-----
+Faltam 1 instantes para o Cliente Alexander acabar a sua refeicao
+-----CLIENTES A COMER NA MESA 7-----
+Faltam 1 instantes para o Cliente Roberto acabar a sua refeicao
+-----CLIENTES A COMER NA MESA 9-----
+Faltam 1 instantes para o Cliente Isabella acabar a sua refeicao
+--------------------------------------------------
+--------------------------------------------------
+Instante: 10
+Hora: 19:09
+Restaurante encontra-se aberto
+Tamanho da fila: 9
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+Chegaram 3 clientes:
+0 - Cliente Gertrudes
+1 - Cliente Ethan
+2 - Cliente Gertrudes
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes acabou um pedido de carne
+Cozinheiro Cozinheiro Jack ainda vai demorar 1 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Gertrudes vai pegar num pedido de carne que vai demorar 4 instantes a acabar
+Cozinheiro Cozinheiro Nelson ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 13
+Pedidos de carne prontos: 1
+Pedidos de peixe prontos: 0
+-----CLIENTES A COMER NA MESA 3-----
+Faltam 0 instantes para o Cliente Alexander acabar a sua refeicao
+Todas os clientes da mesa 3 ja comeram
+-----CLIENTES A COMER NA MESA 7-----
+Faltam 0 instantes para o Cliente Roberto acabar a sua refeicao
+Todas os clientes da mesa 7 ja comeram
+-----CLIENTES A COMER NA MESA 9-----
+Faltam 0 instantes para o Cliente Isabella acabar a sua refeicao
+Todas os clientes da mesa 9 ja comeram
+Empregado de Mesa Mason vai comecar a limpar a mesa 3
+Empregado de Mesa Nelson vai comecar a limpar a mesa 7
+Empregado de Mesa Lucas vai comecar a limpar a mesa 9
+--------------------------------------------------
+--------------------------------------------------
+Instante: 11
+Hora: 19:10
+Restaurante encontra-se fechado
+Tamanho da fila: 12
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Ocupado
+Empregado de Mesa Lucas esta Ocupado
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 3 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Jack acabou um pedido de carne
+Cozinheiro Cozinheiro Nelson ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin vai pegar num pedido de peixe que vai demorar 5 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 12
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+Cliente Nelson acabou de receber o seu pedido e vai demorar 2 instantes a acaba-lo
+Cliente Elijah acabou de receber o seu pedido e vai demorar 4 instantes a acaba-lo
+Cliente Gertrudes acabou de receber o seu pedido e vai demorar 2 instantes a acaba-lo
+Empregado de Mesa Mason ainda vai demorar 3 instantes a acabar de limpar a mesa 3
+Empregado de Mesa Nelson ainda vai demorar 3 instantes a acabar de limpar a mesa 7
+Empregado de Mesa Lucas ainda vai demorar 4 instantes a acabar de limpar a mesa 9
+--------------------------------------------------
+--------------------------------------------------
+Instante: 12
+Hora: 19:11
+Restaurante encontra-se fechado
+Tamanho da fila: 12
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Ocupado
+Empregado de Mesa Lucas esta Ocupado
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 2 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 12
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+-----CLIENTES A COMER NA MESA 8-----
+Faltam 1 instantes para o Cliente Nelson acabar a sua refeicao
+Faltam 3 instantes para o Cliente Elijah acabar a sua refeicao
+Faltam 1 instantes para o Cliente Gertrudes acabar a sua refeicao
+Empregado de Mesa Mason ainda vai demorar 2 instantes a acabar de limpar a mesa 3
+Empregado de Mesa Nelson ainda vai demorar 2 instantes a acabar de limpar a mesa 7
+Empregado de Mesa Lucas ainda vai demorar 3 instantes a acabar de limpar a mesa 9
+--------------------------------------------------
+--------------------------------------------------
+Instante: 13
+Hora: 19:12
+Restaurante encontra-se fechado
+Tamanho da fila: 12
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Ocupado
+Empregado de Mesa Lucas esta Ocupado
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 1 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 12
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+-----CLIENTES A COMER NA MESA 8-----
+Faltam 0 instantes para o Cliente Nelson acabar a sua refeicao
+Faltam 2 instantes para o Cliente Elijah acabar a sua refeicao
+Faltam 0 instantes para o Cliente Gertrudes acabar a sua refeicao
+Empregado de Mesa Mason ainda vai demorar 1 instantes a acabar de limpar a mesa 3
+Empregado de Mesa Nelson ainda vai demorar 1 instantes a acabar de limpar a mesa 7
+Empregado de Mesa Lucas ainda vai demorar 2 instantes a acabar de limpar a mesa 9
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar 2 instantes.
+O cliente Cliente Alexander vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 14
+Hora: 19:13
+Restaurante encontra-se fechado
+Tamanho da fila: 12
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Ocupado
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+Mesa para 2
+1 pedidos de carne
+1 pedidos de peixe
+Mesa para 2
+2 pedidos de carne
+0 pedidos de peixe
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes acabou um pedido de carne
+Cozinheiro Cozinheiro Gertrudes vai pegar num pedido de carne que vai demorar 3 instantes a acabar
+Cozinheiro Cozinheiro Jack vai pegar num pedido de carne que vai demorar 4 instantes a acabar
+Cozinheiro Cozinheiro Nelson acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Nelson vai pegar num pedido de peixe que vai demorar 6 instantes a acabar
+Pedidos de carne em espera: 1
+Pedidos de peixe em espera: 12
+Pedidos de carne prontos: 1
+Pedidos de peixe prontos: 1
+Cliente Roberto acabou de receber o seu pedido e vai demorar 2 instantes a acaba-lo
+Cliente Oliver acabou de receber o seu pedido e vai demorar 2 instantes a acaba-lo
+-----CLIENTES A COMER NA MESA 8-----
+Faltam 0 instantes para o Cliente Nelson acabar a sua refeicao
+Faltam 1 instantes para o Cliente Elijah acabar a sua refeicao
+Faltam 0 instantes para o Cliente Gertrudes acabar a sua refeicao
+Empregado de Mesa Lucas ainda vai demorar 1 instantes a acabar de limpar a mesa 9
+Empregado de pagamento Ethan esta a prosseguir com o processo de pagamento e ainda vai demorar 1 instantes
+--------------------------------------------------
+--------------------------------------------------
+Instante: 15
+Hora: 19:14
+Restaurante encontra-se fechado
+Tamanho da fila: 8
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Disponivel
+Mesa 10 esta Ocupada
+Mesa para 3
+1 pedidos de carne
+2 pedidos de peixe
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 2 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Jack ainda vai demorar 3 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson ainda vai demorar 5 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 2
+Pedidos de peixe em espera: 14
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+-----CLIENTES A COMER NA MESA 3-----
+Faltam 1 instantes para o Cliente Roberto acabar a sua refeicao
+Faltam 1 instantes para o Cliente Oliver acabar a sua refeicao
+-----CLIENTES A COMER NA MESA 8-----
+Faltam 0 instantes para o Cliente Nelson acabar a sua refeicao
+Faltam 0 instantes para o Cliente Elijah acabar a sua refeicao
+Faltam 0 instantes para o Cliente Gertrudes acabar a sua refeicao
+Todas os clientes da mesa 8 ja comeram
+Empregado de Mesa Mason vai comecar a limpar a mesa 8
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 16
+Hora: 19:15
+Restaurante encontra-se fechado
+Tamanho da fila: 5
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 1 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Jack ainda vai demorar 2 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin vai pegar num pedido de peixe que vai demorar 6 instantes a acabar
+Pedidos de carne em espera: 2
+Pedidos de peixe em espera: 13
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 3-----
+Faltam 0 instantes para o Cliente Roberto acabar a sua refeicao
+Faltam 0 instantes para o Cliente Oliver acabar a sua refeicao
+Todas os clientes da mesa 3 ja comeram
+Empregado de Mesa Mason ainda vai demorar 2 instantes a acabar de limpar a mesa 8
+Empregado de Mesa Nelson vai comecar a limpar a mesa 3
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar 2 instantes.
+O cliente Cliente Isabella vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 17
+Hora: 19:16
+Restaurante encontra-se fechado
+Tamanho da fila: 5
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Ocupado
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes acabou um pedido de carne
+Cozinheiro Cozinheiro Jack ainda vai demorar 1 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Gertrudes vai pegar num pedido de carne que vai demorar 3 instantes a acabar
+Cozinheiro Cozinheiro Nelson ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 5 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 1
+Pedidos de peixe em espera: 13
+Pedidos de carne prontos: 1
+Pedidos de peixe prontos: 1
+Empregado de Mesa Mason ainda vai demorar 1 instantes a acabar de limpar a mesa 8
+Empregado de Mesa Nelson ainda vai demorar 4 instantes a acabar de limpar a mesa 3
+Empregado de pagamento Ethan esta a prosseguir com o processo de pagamento e ainda vai demorar 1 instantes
+--------------------------------------------------
+--------------------------------------------------
+Instante: 18
+Hora: 19:17
+Restaurante encontra-se fechado
+Tamanho da fila: 5
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Ocupado
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+Mesa para 1
+1 pedidos de carne
+0 pedidos de peixe
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 2 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Jack acabou um pedido de carne
+Cozinheiro Cozinheiro Jack vai pegar num pedido de carne que vai demorar 5 instantes a acabar
+Cozinheiro Cozinheiro Nelson ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 1
+Pedidos de peixe em espera: 13
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+Cliente Elijah acabou de receber o seu pedido e vai demorar 3 instantes a acaba-lo
+Cliente Olivia acabou de receber o seu pedido e vai demorar 4 instantes a acaba-lo
+Empregado de Mesa Nelson ainda vai demorar 3 instantes a acabar de limpar a mesa 3
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 19
+Hora: 19:18
+Restaurante encontra-se fechado
+Tamanho da fila: 4
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Ocupado
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 1 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Jack ainda vai demorar 4 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 1
+Pedidos de peixe em espera: 13
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 7-----
+Faltam 2 instantes para o Cliente Elijah acabar a sua refeicao
+Faltam 3 instantes para o Cliente Olivia acabar a sua refeicao
+Empregado de Mesa Nelson ainda vai demorar 2 instantes a acabar de limpar a mesa 3
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Cartao. Vai demorar 1 instantes.
+O cliente Cliente Roberto vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 20
+Hora: 19:19
+Restaurante encontra-se fechado
+Tamanho da fila: 4
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Ocupado
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes acabou um pedido de carne
+Cozinheiro Cozinheiro Jack ainda vai demorar 3 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Gertrudes vai pegar num pedido de carne que vai demorar 3 instantes a acabar
+Cozinheiro Cozinheiro Nelson acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Nelson vai pegar num pedido de peixe que vai demorar 6 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 12
+Pedidos de carne prontos: 1
+Pedidos de peixe prontos: 2
+Cliente John acabou de receber o seu pedido e vai demorar 3 instantes a acaba-lo
+Cliente Sophia acabou de receber o seu pedido e vai demorar 2 instantes a acaba-lo
+-----CLIENTES A COMER NA MESA 7-----
+Faltam 1 instantes para o Cliente Elijah acabar a sua refeicao
+Faltam 2 instantes para o Cliente Olivia acabar a sua refeicao
+Cliente Jack acabou de receber o seu pedido e vai demorar 4 instantes a acaba-lo
+Empregado de Mesa Nelson ainda vai demorar 1 instantes a acabar de limpar a mesa 3
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 21
+Hora: 19:20
+Restaurante encontra-se fechado
+Tamanho da fila: 4
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+Mesa para 4
+2 pedidos de carne
+2 pedidos de peixe
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 2 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Jack ainda vai demorar 2 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson ainda vai demorar 5 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 2
+Pedidos de peixe em espera: 14
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+-----CLIENTES A COMER NA MESA 1-----
+Faltam 2 instantes para o Cliente John acabar a sua refeicao
+Faltam 1 instantes para o Cliente Sophia acabar a sua refeicao
+-----CLIENTES A COMER NA MESA 7-----
+Faltam 0 instantes para o Cliente Elijah acabar a sua refeicao
+Faltam 1 instantes para o Cliente Olivia acabar a sua refeicao
+-----CLIENTES A COMER NA MESA 8-----
+Faltam 3 instantes para o Cliente Jack acabar a sua refeicao
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar 2 instantes.
+O cliente Cliente Nelson vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 22
+Hora: 19:21
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 1 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Jack ainda vai demorar 1 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin vai pegar num pedido de peixe que vai demorar 5 instantes a acabar
+Pedidos de carne em espera: 2
+Pedidos de peixe em espera: 13
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 1-----
+Faltam 1 instantes para o Cliente John acabar a sua refeicao
+Faltam 0 instantes para o Cliente Sophia acabar a sua refeicao
+-----CLIENTES A COMER NA MESA 7-----
+Faltam 0 instantes para o Cliente Elijah acabar a sua refeicao
+Faltam 0 instantes para o Cliente Olivia acabar a sua refeicao
+Todas os clientes da mesa 7 ja comeram
+-----CLIENTES A COMER NA MESA 8-----
+Faltam 2 instantes para o Cliente Jack acabar a sua refeicao
+Empregado de Mesa Mason vai comecar a limpar a mesa 7
+Empregado de pagamento Ethan esta a prosseguir com o processo de pagamento e ainda vai demorar 1 instantes
+--------------------------------------------------
+--------------------------------------------------
+Instante: 23
+Hora: 19:22
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes acabou um pedido de carne
+Cozinheiro Cozinheiro Jack acabou um pedido de carne
+Cozinheiro Cozinheiro Gertrudes vai pegar num pedido de carne que vai demorar 5 instantes a acabar
+Cozinheiro Cozinheiro Jack vai pegar num pedido de carne que vai demorar 3 instantes a acabar
+Cozinheiro Cozinheiro Nelson ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 13
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 1-----
+Faltam 0 instantes para o Cliente John acabar a sua refeicao
+Faltam 0 instantes para o Cliente Sophia acabar a sua refeicao
+Todas os clientes da mesa 1 ja comeram
+-----CLIENTES A COMER NA MESA 8-----
+Faltam 1 instantes para o Cliente Jack acabar a sua refeicao
+Empregado de Mesa Mason ainda vai demorar 2 instantes a acabar de limpar a mesa 7
+Empregado de Mesa Nelson vai comecar a limpar a mesa 1
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 24
+Hora: 19:23
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Ocupado
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Ocupada
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 4 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Jack ainda vai demorar 2 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 13
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 8-----
+Faltam 0 instantes para o Cliente Jack acabar a sua refeicao
+Todas os clientes da mesa 8 ja comeram
+Empregado de Mesa Mason ainda vai demorar 1 instantes a acabar de limpar a mesa 7
+Empregado de Mesa Nelson ainda vai demorar 2 instantes a acabar de limpar a mesa 1
+Empregado de Mesa Lucas vai comecar a limpar a mesa 8
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar 2 instantes.
+O cliente Cliente Elijah vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 25
+Hora: 19:24
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Ocupado
+Empregado de Mesa Lucas esta Ocupado
+-----MESAS-----
+Mesa 1 esta Ocupada
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 3 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Jack ainda vai demorar 1 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 13
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+Empregado de Mesa Nelson ainda vai demorar 1 instantes a acabar de limpar a mesa 1
+Empregado de Mesa Lucas ainda vai demorar 2 instantes a acabar de limpar a mesa 8
+Empregado de pagamento Ethan esta a prosseguir com o processo de pagamento e ainda vai demorar 1 instantes
+--------------------------------------------------
+--------------------------------------------------
+Instante: 26
+Hora: 19:25
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Ocupado
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Ocupada
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 2 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Jack acabou um pedido de carne
+Cozinheiro Cozinheiro Nelson acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Nelson vai pegar num pedido de peixe que vai demorar 6 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 12
+Pedidos de carne prontos: 3
+Pedidos de peixe prontos: 2
+Cliente Mia acabou de receber o seu pedido e vai demorar 4 instantes a acaba-lo
+Cliente Gertrudes acabou de receber o seu pedido e vai demorar 4 instantes a acaba-lo
+Cliente Ethan acabou de receber o seu pedido e vai demorar 3 instantes a acaba-lo
+Cliente Gertrudes acabou de receber o seu pedido e vai demorar 2 instantes a acaba-lo
+Empregado de Mesa Lucas ainda vai demorar 1 instantes a acabar de limpar a mesa 8
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 27
+Hora: 19:26
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes ainda vai demorar 1 instantes a acabar o pedido de carne que esta a fazer
+Cozinheiro Cozinheiro Nelson ainda vai demorar 5 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin vai pegar num pedido de peixe que vai demorar 6 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 11
+Pedidos de carne prontos: 1
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 3-----
+Faltam 3 instantes para o Cliente Mia acabar a sua refeicao
+Faltam 3 instantes para o Cliente Gertrudes acabar a sua refeicao
+Faltam 2 instantes para o Cliente Ethan acabar a sua refeicao
+Faltam 1 instantes para o Cliente Gertrudes acabar a sua refeicao
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Cartao. Vai demorar 1 instantes.
+O cliente Cliente Jack vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 28
+Hora: 19:27
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Gertrudes acabou um pedido de carne
+Cozinheiro Cozinheiro Nelson ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 5 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 11
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 3-----
+Faltam 2 instantes para o Cliente Mia acabar a sua refeicao
+Faltam 2 instantes para o Cliente Gertrudes acabar a sua refeicao
+Faltam 1 instantes para o Cliente Ethan acabar a sua refeicao
+Faltam 0 instantes para o Cliente Gertrudes acabar a sua refeicao
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 29
+Hora: 19:28
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 11
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 3-----
+Faltam 1 instantes para o Cliente Mia acabar a sua refeicao
+Faltam 1 instantes para o Cliente Gertrudes acabar a sua refeicao
+Faltam 0 instantes para o Cliente Ethan acabar a sua refeicao
+Faltam 0 instantes para o Cliente Gertrudes acabar a sua refeicao
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar 2 instantes.
+O cliente Cliente John vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 30
+Hora: 19:29
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 11
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 3-----
+Faltam 0 instantes para o Cliente Mia acabar a sua refeicao
+Faltam 0 instantes para o Cliente Gertrudes acabar a sua refeicao
+Faltam 0 instantes para o Cliente Ethan acabar a sua refeicao
+Faltam 0 instantes para o Cliente Gertrudes acabar a sua refeicao
+Todas os clientes da mesa 3 ja comeram
+Empregado de Mesa Mason vai comecar a limpar a mesa 3
+Empregado de pagamento Ethan esta a prosseguir com o processo de pagamento e ainda vai demorar 1 instantes
+--------------------------------------------------
+--------------------------------------------------
+Instante: 31
+Hora: 19:30
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 11
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+Empregado de Mesa Mason ainda vai demorar 2 instantes a acabar de limpar a mesa 3
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 32
+Hora: 19:31
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Ocupada
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Nelson vai pegar num pedido de peixe que vai demorar 6 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 10
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 2
+Cliente Benjamin acabou de receber o seu pedido e vai demorar 2 instantes a acaba-lo
+Cliente Mia acabou de receber o seu pedido e vai demorar 2 instantes a acaba-lo
+Empregado de Mesa Mason ainda vai demorar 1 instantes a acabar de limpar a mesa 3
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar 2 instantes.
+O cliente Cliente Mia vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 33
+Hora: 19:32
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 5 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin vai pegar num pedido de peixe que vai demorar 4 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 9
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 4-----
+Faltam 1 instantes para o Cliente Benjamin acabar a sua refeicao
+Faltam 1 instantes para o Cliente Mia acabar a sua refeicao
+Empregado de pagamento Ethan esta a prosseguir com o processo de pagamento e ainda vai demorar 1 instantes
+--------------------------------------------------
+--------------------------------------------------
+Instante: 34
+Hora: 19:33
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 9
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 4-----
+Faltam 0 instantes para o Cliente Benjamin acabar a sua refeicao
+Faltam 0 instantes para o Cliente Mia acabar a sua refeicao
+Todas os clientes da mesa 4 ja comeram
+Empregado de Mesa Mason vai comecar a limpar a mesa 4
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 35
+Hora: 19:34
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 9
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+Empregado de Mesa Mason ainda vai demorar 4 instantes a acabar de limpar a mesa 4
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar 2 instantes.
+O cliente Cliente Roberto vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 36
+Hora: 19:35
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 9
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+Empregado de Mesa Mason ainda vai demorar 3 instantes a acabar de limpar a mesa 4
+Empregado de pagamento Ethan esta a prosseguir com o processo de pagamento e ainda vai demorar 1 instantes
+--------------------------------------------------
+--------------------------------------------------
+Instante: 37
+Hora: 19:36
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin vai pegar num pedido de peixe que vai demorar 4 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 8
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 2
+Cliente Jack acabou de receber o seu pedido e vai demorar 3 instantes a acaba-lo
+Cliente Ava acabou de receber o seu pedido e vai demorar 2 instantes a acaba-lo
+Empregado de Mesa Mason ainda vai demorar 2 instantes a acabar de limpar a mesa 4
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 38
+Hora: 19:37
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Ocupada
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Nelson vai pegar num pedido de peixe que vai demorar 5 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 7
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 6-----
+Faltam 2 instantes para o Cliente Jack acabar a sua refeicao
+Faltam 1 instantes para o Cliente Ava acabar a sua refeicao
+Empregado de Mesa Mason ainda vai demorar 1 instantes a acabar de limpar a mesa 4
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Cartao. Vai demorar 1 instantes.
+O cliente Cliente Benjamin vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 39
+Hora: 19:38
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 7
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 6-----
+Faltam 1 instantes para o Cliente Jack acabar a sua refeicao
+Faltam 0 instantes para o Cliente Ava acabar a sua refeicao
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 40
+Hora: 19:39
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 7
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 6-----
+Faltam 0 instantes para o Cliente Jack acabar a sua refeicao
+Faltam 0 instantes para o Cliente Ava acabar a sua refeicao
+Todas os clientes da mesa 6 ja comeram
+Empregado de Mesa Mason vai comecar a limpar a mesa 6
+--------------------------------------------------
+--------------------------------------------------
+Instante: 41
+Hora: 19:40
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin vai pegar num pedido de peixe que vai demorar 4 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 6
+Pedidos de carne prontos: 2
+Pedidos de peixe prontos: 2
+Cliente Mia acabou de receber o seu pedido e vai demorar 2 instantes a acaba-lo
+Cliente Roberto acabou de receber o seu pedido e vai demorar 4 instantes a acaba-lo
+Cliente John acabou de receber o seu pedido e vai demorar 4 instantes a acaba-lo
+Empregado de Mesa Mason ainda vai demorar 3 instantes a acabar de limpar a mesa 6
+--------------------------------------------------
+--------------------------------------------------
+Instante: 42
+Hora: 19:41
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 6
+Pedidos de carne prontos: 1
+Pedidos de peixe prontos: 0
+-----CLIENTES A COMER NA MESA 9-----
+Faltam 1 instantes para o Cliente Mia acabar a sua refeicao
+Faltam 3 instantes para o Cliente Roberto acabar a sua refeicao
+Faltam 3 instantes para o Cliente John acabar a sua refeicao
+Empregado de Mesa Mason ainda vai demorar 2 instantes a acabar de limpar a mesa 6
+--------------------------------------------------
+--------------------------------------------------
+Instante: 43
+Hora: 19:42
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Ocupada
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Nelson vai pegar num pedido de peixe que vai demorar 6 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 5
+Pedidos de carne prontos: 1
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 9-----
+Faltam 0 instantes para o Cliente Mia acabar a sua refeicao
+Faltam 2 instantes para o Cliente Roberto acabar a sua refeicao
+Faltam 2 instantes para o Cliente John acabar a sua refeicao
+Empregado de Mesa Mason ainda vai demorar 1 instantes a acabar de limpar a mesa 6
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar 2 instantes.
+O cliente Cliente Jack vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 44
+Hora: 19:43
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 5 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 5
+Pedidos de carne prontos: 1
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 9-----
+Faltam 0 instantes para o Cliente Mia acabar a sua refeicao
+Faltam 1 instantes para o Cliente Roberto acabar a sua refeicao
+Faltam 1 instantes para o Cliente John acabar a sua refeicao
+Empregado de pagamento Ethan esta a prosseguir com o processo de pagamento e ainda vai demorar 1 instantes
+--------------------------------------------------
+--------------------------------------------------
+Instante: 45
+Hora: 19:44
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin vai pegar num pedido de peixe que vai demorar 6 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 4
+Pedidos de carne prontos: 1
+Pedidos de peixe prontos: 2
+-----CLIENTES A COMER NA MESA 9-----
+Faltam 0 instantes para o Cliente Mia acabar a sua refeicao
+Faltam 0 instantes para o Cliente Roberto acabar a sua refeicao
+Faltam 0 instantes para o Cliente John acabar a sua refeicao
+Todas os clientes da mesa 9 ja comeram
+Cliente Olivia acabou de receber o seu pedido e vai demorar 2 instantes a acaba-lo
+Cliente Emma acabou de receber o seu pedido e vai demorar 4 instantes a acaba-lo
+Cliente Lucas acabou de receber o seu pedido e vai demorar 2 instantes a acaba-lo
+Empregado de Mesa Mason vai comecar a limpar a mesa 9
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 46
+Hora: 19:45
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 5 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 4
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+-----CLIENTES A COMER NA MESA 10-----
+Faltam 1 instantes para o Cliente Olivia acabar a sua refeicao
+Faltam 3 instantes para o Cliente Emma acabar a sua refeicao
+Faltam 1 instantes para o Cliente Lucas acabar a sua refeicao
+Empregado de Mesa Mason ainda vai demorar 2 instantes a acabar de limpar a mesa 9
+--------------------------------------------------
+--------------------------------------------------
+Instante: 47
+Hora: 19:46
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Ocupada
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 4
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+-----CLIENTES A COMER NA MESA 10-----
+Faltam 0 instantes para o Cliente Olivia acabar a sua refeicao
+Faltam 2 instantes para o Cliente Emma acabar a sua refeicao
+Faltam 0 instantes para o Cliente Lucas acabar a sua refeicao
+Empregado de Mesa Mason ainda vai demorar 1 instantes a acabar de limpar a mesa 9
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar 2 instantes.
+O cliente Cliente Mia vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 48
+Hora: 19:47
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 4
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+-----CLIENTES A COMER NA MESA 10-----
+Faltam 0 instantes para o Cliente Olivia acabar a sua refeicao
+Faltam 1 instantes para o Cliente Emma acabar a sua refeicao
+Faltam 0 instantes para o Cliente Lucas acabar a sua refeicao
+Empregado de pagamento Ethan esta a prosseguir com o processo de pagamento e ainda vai demorar 1 instantes
+--------------------------------------------------
+--------------------------------------------------
+Instante: 49
+Hora: 19:48
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Nelson vai pegar num pedido de peixe que vai demorar 7 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 3
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 10-----
+Faltam 0 instantes para o Cliente Olivia acabar a sua refeicao
+Faltam 0 instantes para o Cliente Emma acabar a sua refeicao
+Faltam 0 instantes para o Cliente Lucas acabar a sua refeicao
+Todas os clientes da mesa 10 ja comeram
+Empregado de Mesa Mason vai comecar a limpar a mesa 10
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 50
+Hora: 19:49
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 6 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 3
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 1
+Empregado de Mesa Mason ainda vai demorar 3 instantes a acabar de limpar a mesa 10
+--------------------------------------------------
+--------------------------------------------------
+Instante: 51
+Hora: 19:50
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 5 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin vai pegar num pedido de peixe que vai demorar 5 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 2
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 2
+Empregado de Mesa Mason ainda vai demorar 2 instantes a acabar de limpar a mesa 10
+--------------------------------------------------
+--------------------------------------------------
+Instante: 52
+Hora: 19:51
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Ocupada
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 2
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 2
+Empregado de Mesa Mason ainda vai demorar 1 instantes a acabar de limpar a mesa 10
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar 2 instantes.
+O cliente Cliente Olivia vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 53
+Hora: 19:52
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 2
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 2
+Empregado de pagamento Ethan esta a prosseguir com o processo de pagamento e ainda vai demorar 1 instantes
+--------------------------------------------------
+--------------------------------------------------
+Instante: 54
+Hora: 19:53
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 2
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 2
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 55
+Hora: 19:54
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 2
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 2
+--------------------------------------------------
+--------------------------------------------------
+Instante: 56
+Hora: 19:55
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin acabou um pedido de peixe.
+Cozinheiro Cozinheiro Nelson vai pegar num pedido de peixe que vai demorar 5 instantes a acabar
+Cozinheiro Cozinheiro Benjamin vai pegar num pedido de peixe que vai demorar 6 instantes a acabar
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 4
+Cliente Elijah acabou de receber o seu pedido e vai demorar 3 instantes a acaba-lo
+Cliente Mia acabou de receber o seu pedido e vai demorar 4 instantes a acaba-lo
+Cliente Jack acabou de receber o seu pedido e vai demorar 4 instantes a acaba-lo
+--------------------------------------------------
+--------------------------------------------------
+Instante: 57
+Hora: 19:56
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 5 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 2-----
+Faltam 2 instantes para o Cliente Elijah acabar a sua refeicao
+Faltam 3 instantes para o Cliente Mia acabar a sua refeicao
+Faltam 3 instantes para o Cliente Jack acabar a sua refeicao
+--------------------------------------------------
+--------------------------------------------------
+Instante: 58
+Hora: 19:57
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 4 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 2-----
+Faltam 1 instantes para o Cliente Elijah acabar a sua refeicao
+Faltam 2 instantes para o Cliente Mia acabar a sua refeicao
+Faltam 2 instantes para o Cliente Jack acabar a sua refeicao
+--------------------------------------------------
+--------------------------------------------------
+Instante: 59
+Hora: 19:58
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 3 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 2-----
+Faltam 0 instantes para o Cliente Elijah acabar a sua refeicao
+Faltam 1 instantes para o Cliente Mia acabar a sua refeicao
+Faltam 1 instantes para o Cliente Jack acabar a sua refeicao
+--------------------------------------------------
+--------------------------------------------------
+Instante: 60
+Hora: 19:59
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 2 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 1
+-----CLIENTES A COMER NA MESA 2-----
+Faltam 0 instantes para o Cliente Elijah acabar a sua refeicao
+Faltam 0 instantes para o Cliente Mia acabar a sua refeicao
+Faltam 0 instantes para o Cliente Jack acabar a sua refeicao
+Todas os clientes da mesa 2 ja comeram
+Empregado de Mesa Mason vai comecar a limpar a mesa 2
+--------------------------------------------------
+--------------------------------------------------
+Instante: 61
+Hora: 20:00
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Nelson acabou um pedido de peixe.
+Cozinheiro Cozinheiro Benjamin ainda vai demorar 1 instantes a acabar o pedido de peixe que esta a fazer
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 2
+Empregado de Mesa Mason ainda vai demorar 2 instantes a acabar de limpar a mesa 2
+--------------------------------------------------
+--------------------------------------------------
+Instante: 62
+Hora: 20:01
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Ocupada
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Cozinheiro Cozinheiro Benjamin acabou um pedido de peixe.
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 3
+Cliente Jeremias acabou de receber o seu pedido e vai demorar 3 instantes a acaba-lo
+Cliente Ethan acabou de receber o seu pedido e vai demorar 2 instantes a acaba-lo
+Cliente Fernando acabou de receber o seu pedido e vai demorar 3 instantes a acaba-lo
+Empregado de Mesa Mason ainda vai demorar 1 instantes a acabar de limpar a mesa 2
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar 2 instantes.
+O cliente Cliente Elijah vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 63
+Hora: 20:02
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Disponivel
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+-----CLIENTES A COMER NA MESA 5-----
+Faltam 2 instantes para o Cliente Jeremias acabar a sua refeicao
+Faltam 1 instantes para o Cliente Ethan acabar a sua refeicao
+Faltam 2 instantes para o Cliente Fernando acabar a sua refeicao
+Empregado de pagamento Ethan esta a prosseguir com o processo de pagamento e ainda vai demorar 1 instantes
+--------------------------------------------------
+--------------------------------------------------
+Instante: 64
+Hora: 20:03
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Disponivel
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+-----CLIENTES A COMER NA MESA 5-----
+Faltam 1 instantes para o Cliente Jeremias acabar a sua refeicao
+Faltam 0 instantes para o Cliente Ethan acabar a sua refeicao
+Faltam 1 instantes para o Cliente Fernando acabar a sua refeicao
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 65
+Hora: 20:04
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Disponivel
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+-----CLIENTES A COMER NA MESA 5-----
+Faltam 0 instantes para o Cliente Jeremias acabar a sua refeicao
+Faltam 0 instantes para o Cliente Ethan acabar a sua refeicao
+Faltam 0 instantes para o Cliente Fernando acabar a sua refeicao
+Todas os clientes da mesa 5 ja comeram
+Empregado de Mesa Mason vai comecar a limpar a mesa 5
+--------------------------------------------------
+--------------------------------------------------
+Instante: 66
+Hora: 20:05
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Disponivel
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+Empregado de Mesa Mason ainda vai demorar 3 instantes a acabar de limpar a mesa 5
+--------------------------------------------------
+--------------------------------------------------
+Instante: 67
+Hora: 20:06
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Disponivel
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+Empregado de Mesa Mason ainda vai demorar 2 instantes a acabar de limpar a mesa 5
+--------------------------------------------------
+--------------------------------------------------
+Instante: 68
+Hora: 20:07
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Ocupado
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Disponivel
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Ocupada
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+Empregado de Mesa Mason ainda vai demorar 1 instantes a acabar de limpar a mesa 5
+-----EMPREGADO DE PAGAMENTO-----
+Empregado de pagamento Ethan vai comecar processo de pagamento de um cliente que vai pagar em Cartao. Vai demorar 1 instantes.
+O cliente Cliente Jeremias vai comecar o processo de pagamento
+--------------------------------------------------
+--------------------------------------------------
+Instante: 69
+Hora: 20:08
+Restaurante encontra-se fechado
+Tamanho da fila: 0
+-----EMPREGADOS DE MESA-----
+Empregado de Mesa Mason esta Disponivel
+Empregado de Mesa Nelson esta Disponivel
+Empregado de Mesa Lucas esta Disponivel
+-----MESAS-----
+Mesa 1 esta Disponivel
+Mesa 2 esta Disponivel
+Mesa 3 esta Disponivel
+Mesa 4 esta Disponivel
+Mesa 5 esta Disponivel
+Mesa 6 esta Disponivel
+Mesa 7 esta Disponivel
+Mesa 8 esta Disponivel
+Mesa 9 esta Disponivel
+Mesa 10 esta Disponivel
+-----COZINHEIROS-----
+Pedidos de carne em espera: 0
+Pedidos de peixe em espera: 0
+Pedidos de carne prontos: 0
+Pedidos de peixe prontos: 0
+Empregado de pagamento Ethan acabou o processo de pagamento
+--------------------------------------------------
+
+-----DINHEIRO GANHO = 242-----
+-----NUMERO DE PRATOS DE CARNE FEITOS = 11-----
+-----NUMERO DE PRATOS DE PEIXE FEITOS = 22-----

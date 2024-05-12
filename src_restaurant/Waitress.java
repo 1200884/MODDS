@@ -1,12 +1,12 @@
 package src_restaurant;
 
 public class Waitress {
-    private String name;
-    private int minTimeExec;
-    private int maxTimeExec;
-    private int currentActionTimeLeft;
-    private int numTableWorkingOn;
-    private boolean isAvailable;
+    public String name;
+    public int minTimeExec;
+    public int maxTimeExec;
+    public int currentActionTimeLeft;
+    public int numTableWorkingOn;
+    public boolean isAvailable;
 
     public Waitress(String name, int minTimeExec, int maxTimeExec, int currentActionTimeLeft, int numTableWorkingOn, boolean isAvailable) {
         this.name = name;
