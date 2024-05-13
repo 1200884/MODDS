@@ -107,11 +107,12 @@ public class RestaurantSimulation {
                 String status = waitress.isAvailable() ? "Disponivel" : "Ocupado";
                 System.out.println(waitress.getName() + " esta " + status);
             }
+            /*
             System.out.println("-----MESAS-----");
             for(Table table : tables){
                 String status = table.isAvailable() ? "Disponivel" : "Ocupada";
                 System.out.println("Mesa " + table.getTableNum() + " esta " + status);
-            }
+            } */
 
             Thread.sleep(1000);
 
@@ -258,24 +259,24 @@ public class RestaurantSimulation {
                     for(Customer customer : table.getCustomersUsingTable()){
                         int eatingTime = random.nextInt(customer.getMaxTimeEat() - customer.getMinTimeEat()) + customer.getMinTimeEat();
                         customer.setCurrentActionTimeLeft(eatingTime);
-                        System.out.println(customer.getName()+" acabou de receber o seu pedido e vai demorar "+eatingTime+" instantes a acaba-lo");
+                        //System.out.println(customer.getName()+" acabou de receber o seu pedido e vai demorar "+eatingTime+" instantes a acaba-lo");
                     }
 
                     table.setServed(true);
                 }
             }else if(!table.getCustomersUsingTable().isEmpty() && table.isServed && !table.isAlreadyBeingCleaned()){
                 int customersAlreadyEat = 0;
-                System.out.println("-----CLIENTES A COMER NA MESA " + table.getTableNum() + "-----");
+                //System.out.println("-----CLIENTES A COMER NA MESA " + table.getTableNum() + "-----");
                 for(Customer customer : table.getCustomersUsingTable()){
                     customer.decreaseCurrentActionTimeLeft();
-                    System.out.println("Faltam " + customer.getCurrentActionTimeLeft() + " instantes para o "+customer.getName()+" acabar a sua refeicao");
+                    //System.out.println("Faltam " + customer.getCurrentActionTimeLeft() + " instantes para o "+customer.getName()+" acabar a sua refeicao");
                     if(customer.getCurrentActionTimeLeft() <= 0){
                         customersAlreadyEat++;
                     }
                 }
 
                 if(customersAlreadyEat == table.getCustomersUsingTable().size() && !table.isAlreadyBeingCleaned()){
-                    System.out.println("Todas os clientes da mesa " + table.getTableNum() + " ja comeram");
+                    //System.out.println("Todas os clientes da mesa " + table.getTableNum() + " ja comeram");
                     table.setNeedsToBePreparedForNextCustomers(true);
                 }
             }
@@ -287,13 +288,13 @@ public class RestaurantSimulation {
                 for(Table table : tables){
                     if(waitress.isAvailable){
                         if(table.needsToBePreparedForNextCustomers()){
-                            System.out.println(waitress.getName() + " vai comecar a limpar a mesa " + table.getTableNum());
+                            //System.out.println(waitress.getName() + " vai comecar a limpar a mesa " + table.getTableNum());
                             prepareTableToNextCustomers(waitress, table);
                         }
                     }
                 }
             }else{
-                System.out.println(waitress.getName() + " ainda vai demorar " + waitress.getCurrentActionTimeLeft() + " instantes a acabar de limpar a mesa " + waitress.getNumTableWorkingOn());
+                //System.out.println(waitress.getName() + " ainda vai demorar " + waitress.getCurrentActionTimeLeft() + " instantes a acabar de limpar a mesa " + waitress.getNumTableWorkingOn());
                 waitress.decreaseCurrentActionTimeLeft();
                 if(waitress.getCurrentActionTimeLeft()==0){
                     Table table = findTableWorkingOnPerWaitress(waitress);
@@ -302,6 +303,8 @@ public class RestaurantSimulation {
                 }
             }
         }
+
+        printTablesInformation();
 
         //Empregado de pagamento a trabalhar
         for(PaymentEmployee paymentEmployee : paymentEmployees){
@@ -325,6 +328,7 @@ public class RestaurantSimulation {
 
     public void printTablesInformation(){
         for(Table table : tables){
+            System.out.println();
             System.out.println("-----MESA " + table.getTableNum() + "-----");
             if(table.getCustomersUsingTable().isEmpty()){
                 System.out.println("DISPONIVEL");
@@ -334,7 +338,7 @@ public class RestaurantSimulation {
                         System.out.println("Mesa a ser limpa pelo " + waitress);
                     }
                 }
-            }else if(table.isTableBeingUsedAsSecondTable()){
+            }else if(table.isTableBeingUsedAsSecondTable() && table.isServed()){
                 for(Table table2 : tables){
                     if(table != table2 && table2.isTableBeingUsedAsSecondTable() && table2.getCustomersUsingTable() == table.getCustomersUsingTable()){
                         System.out.println("Esta mesa foi juntada a mesa " + table2.getTableNum());
@@ -342,14 +346,44 @@ public class RestaurantSimulation {
                 }
                 System.out.println("Mesa foi servida? -> " + (table.isServed() ? "Sim" : "Nao"));
                 System.out.println("Clientes na mesa:");
+                int numCustomerAlreadyEat = 0;
                 for(Customer customer : table.getCustomersUsingTable()){
-                    System.out.println(customer.getName() + " vai demorar " + customer.getCurrentActionTimeLeft() + " instantes a acabar de comer");
+                    if(customer.getCurrentActionTimeLeft() == 0){
+                        System.out.println(customer.getName() + " ja comeu");
+                        numCustomerAlreadyEat++;
+                    }else {
+                        System.out.println(customer.getName() + " vai demorar " + customer.getCurrentActionTimeLeft() + " instantes a acabar de comer");
+                    }
+                }
+                if(numCustomerAlreadyEat == table.getCustomersUsingTable().size()){
+                    System.out.println("Todos os clientes desta mesa ja comeram");
+                }
+            }else if(table.isServed()){
+                System.out.println("Mesa foi servida? -> Sim");
+                System.out.println("Clientes na mesa:");
+                int numCustomerAlreadyEat = 0;
+                for(Customer customer : table.getCustomersUsingTable()){
+                    if(customer.getCurrentActionTimeLeft() == 0){
+                        System.out.println(customer.getName() + " ja comeu");
+                        numCustomerAlreadyEat++;
+                    }else {
+                        System.out.println(customer.getName() + " vai demorar " + customer.getCurrentActionTimeLeft() + " instantes a acabar de comer");
+                    }
+                }
+                if(numCustomerAlreadyEat == table.getCustomersUsingTable().size()){
+                    System.out.println("Todos os clientes desta mesa ja comeram");
+                }
+            }else if(table.isTableBeingUsedAsSecondTable()){
+                for(Table table2 : tables){
+                    if(table != table2 && table2.isTableBeingUsedAsSecondTable() && table2.getCustomersUsingTable() == table.getCustomersUsingTable()){
+                        System.out.println("Esta mesa foi juntada a mesa " + table2.getTableNum());
+                    }
                 }
             }else{
-                System.out.println("Mesa foi servida? -> " + (table.isServed() ? "Sim" : "Nao"));
+                System.out.println("Mesa foi servida? -> Nao");
                 System.out.println("Clientes na mesa:");
                 for(Customer customer : table.getCustomersUsingTable()){
-                    System.out.println(customer.getName() + " vai demorar " + customer.getCurrentActionTimeLeft() + " instantes a acabar de comer");
+                    System.out.println(customer.getName());
                 }
             }
         }
