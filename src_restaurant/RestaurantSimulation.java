@@ -10,10 +10,10 @@ public class RestaurantSimulation {
     private final int SIMULATION_DURATION = 180;
     private final int NUMBER_OF_TABLES = 10;
     private final int NUMBER_OF_WAITRESSES = 3;
-    private final int NUMBER_OF_MEAT_COOKERS = 5;
-    private final int NUMBER_OF_FISH_COOKERS = 5;
+    private final int NUMBER_OF_MEAT_COOKERS = 2;
+    private final int NUMBER_OF_FISH_COOKERS = 2;
     private final int NUMBER_OF_PAYMENT_EMPLOYEES = 1;
-    private final int MAX_CUSTOMER_QUEUE_ALLOW = 5;
+    private final int MAX_CUSTOMER_QUEUE_ALLOW = 10;
     private final int CUSTOMER_ARRIVE_PERCENTAGE = 40;
 
     private boolean isRestaurantOpen = true;
@@ -123,6 +123,7 @@ public class RestaurantSimulation {
             }
         }
 
+        moneyEarned = (numberOfFishDishesOfTheDay * fishDish.getPrice()) + (numberOfMeatDishesOfTheDay * meatDish.getPrice());
         System.out.println();
         System.out.println("-----DINHEIRO GANHO = " + moneyEarned + "-----");
         System.out.println("-----NUMERO DE PRATOS DE CARNE FEITOS = " + numberOfMeatDishesOfTheDay + "-----");
@@ -186,7 +187,7 @@ public class RestaurantSimulation {
             }else if(!table.getCustomersUsingTable().isEmpty() && !table.isServed() && !table.isTableBeingUsedAsSecondTable() && table.isReadyToOrder() &&!table.hasOrdered()){
                 for(Waitress waitress : waitresses){
                     if(waitress.isAvailable()){
-                        retrieveOrdersFromTable(table);
+                        retrieveOrdersFromTable(waitress,table);
                         table.setHasOrdered(true);
                         table.setIsReadyToOrder(false);
                         break;
@@ -517,7 +518,7 @@ public class RestaurantSimulation {
         return list;
     }
 
-    public void retrieveOrdersFromTable(Table table){
+    public void retrieveOrdersFromTable(Waitress waitress, Table table){
         int meatAux = 0;
         int fishAux = 0;
         
@@ -533,9 +534,7 @@ public class RestaurantSimulation {
                 fishAux++;
             }
         }
-
-        System.out.println(meatAux + " pedidos de carne");
-        System.out.println(fishAux + " pedidos de peixe");
+        System.out.println("Empregado " + waitress.getName() + " recolheu o pedido da mesa " + table.getTableNum() + ". Foram pedidos " + meatAux + " pratos de carne e " + fishAux + " pratos de peixe.");
     }
 
     public void startPaymentProcess(PaymentEmployee paymentEmployee, String paymentMethod, List<String> typeOfDishesToPay){
@@ -549,14 +548,6 @@ public class RestaurantSimulation {
             int time = random.nextInt(paymentEmployee.getMaxTimeExecMoney() - paymentEmployee.getMinTimeExecMoney()) + paymentEmployee.getMinTimeExecMoney();
             System.out.println(paymentEmployee.getName()+" vai comecar processo de pagamento de um cliente que vai pagar em Dinheiro. Vai demorar " + time + " instantes.");
             paymentEmployee.setCurrentActionTimeLeft(time);
-        }
-
-        for(String dish : typeOfDishesToPay){
-            if(dish.equalsIgnoreCase("Meat")){
-                moneyEarned = moneyEarned + meatDish.getPrice();
-            }else{
-                moneyEarned = moneyEarned + fishDish.getPrice();
-            }
         }
     }
 
