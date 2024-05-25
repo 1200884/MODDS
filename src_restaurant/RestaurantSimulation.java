@@ -166,25 +166,25 @@ public class RestaurantSimulation {
         meatcooker2timeunavailable = currentTime - meatcooker2timeavailable;
         fishcooker1timeunavailable = currentTime - fishcooker1timeavailable;
         fishcooker2timeunavailable = currentTime - fishcooker2timeavailable;
-
+        //
         int j = 0;
         for (Waitress waitress : waitresses) {
             if (j == 0) {
-                System.out.println("Tempo em que o " + waitress.getName() + " esteve disponível -> "+  waitress1timeavailable);
-                System.out.println("Tempo em que o " + waitress.getName() + " esteve indisponível -> "+  waitress1timeunavailable);
+                System.out.println("Tempo em que o " + waitress.getName() + " esteve disponivel -> "+  waitress1timeavailable);
+                System.out.println("Tempo em que o " + waitress.getName() + " esteve indisponivel -> "+  waitress1timeunavailable);
                 System.out.println("Percentagem de disponibilidade do " + waitress.getName() + " ->" + df.format((float) waitress1timeavailable / currentTime * 100) + "%");
                 System.out.println("-------------------------------------------------------------");
             }
             if (j == 1) {
-                System.out.println("Tempo em que o " + waitress.getName() + " esteve disponível -> "+  waitress2timeavailable);
-                System.out.println("Tempo em que o " + waitress.getName() + " esteve indisponível -> "+  waitress2timeunavailable);
+                System.out.println("Tempo em que o " + waitress.getName() + " esteve disponivel -> "+  waitress2timeavailable);
+                System.out.println("Tempo em que o " + waitress.getName() + " esteve indisponivel -> "+  waitress2timeunavailable);
                 System.out.println("Percentagem de disponibilidade do " + waitress.getName() + " ->" + df.format((float) waitress2timeavailable / currentTime * 100) + "%");
                 System.out.println("-------------------------------------------------------------");
 
             }
             if (j == 2) {
-                System.out.println("Tempo em que o " + waitress.getName() + " esteve disponível -> " + waitress3timeavailable);
-                System.out.println("Tempo em que o " + waitress.getName() + " esteve indisponível -> "+  waitress3timeunavailable);
+                System.out.println("Tempo em que o " + waitress.getName() + " esteve disponivel -> " + waitress3timeavailable);
+                System.out.println("Tempo em que o " + waitress.getName() + " esteve indisponivel -> "+  waitress3timeunavailable);
                 System.out.println("Percentagem de disponibilidade do " + waitress.getName() + " ->" + df.format((float) waitress3timeavailable / currentTime * 100) + "%");
                 System.out.println("-------------------------------------------------------------");
 
@@ -194,15 +194,15 @@ public class RestaurantSimulation {
         int p = 0;
         for (Cooker cooker : meatCookers) {
             if (p == 0) {
-                System.out.println("Tempo em que o " + cooker.getName() + " esteve disponível -> "+  meatcooker1timeavailable);
-                System.out.println("Tempo em que o " + cooker.getName() + " esteve indisponível -> "+  meatcooker1timeunavailable);
+                System.out.println("Tempo em que o " + cooker.getName() + " esteve disponivel -> "+  meatcooker1timeavailable);
+                System.out.println("Tempo em que o " + cooker.getName() + " esteve indisponivel -> "+  meatcooker1timeunavailable);
                 System.out.println("Percentagem de disponibilidade do " + cooker.getName() + " ->" + df.format((float) meatcooker1timeavailable / currentTime * 100) + "%");
                 System.out.println("-------------------------------------------------------------");
 
             }
             if (p == 1) {
-                System.out.println("Tempo em que o " + cooker.getName() + " esteve disponível -> "+  meatcooker2timeavailable);
-                System.out.println("Tempo em que o " + cooker.getName() + " esteve indisponível -> "+  meatcooker2timeunavailable);
+                System.out.println("Tempo em que o " + cooker.getName() + " esteve disponivel -> "+  meatcooker2timeavailable);
+                System.out.println("Tempo em que o " + cooker.getName() + " esteve indisponivel -> "+  meatcooker2timeunavailable);
                 System.out.println("Percentagem de disponibilidade do " + cooker.getName() + " ->" + df.format((float) meatcooker2timeavailable / currentTime * 100 )+ "%");
                 System.out.println("-------------------------------------------------------------");
 
@@ -212,15 +212,15 @@ public class RestaurantSimulation {
         int f = 0;
         for (Cooker cooker : fishCookers) {
             if (f == 0) {
-                System.out.println("Tempo em que o " + cooker.getName() + " esteve disponível -> "+  fishcooker1timeavailable);
-                System.out.println("Tempo em que o " + cooker.getName() + " esteve indisponível -> "+  fishcooker1timeunavailable);
+                System.out.println("Tempo em que o " + cooker.getName() + " esteve disponivel -> "+  fishcooker1timeavailable);
+                System.out.println("Tempo em que o " + cooker.getName() + " esteve indisponivel -> "+  fishcooker1timeunavailable);
                 System.out.println("Percentagem de disponibilidade do " + cooker.getName() + " ->" + df.format((float) fishcooker1timeavailable / currentTime * 100) + "%");
                 System.out.println("-------------------------------------------------------------");
 
             }
             if (f == 1) {
-                System.out.println("Tempo em que o " + cooker.getName() + " esteve disponível -> "+  fishcooker2timeavailable);
-                System.out.println("Tempo em que o " + cooker.getName() + " esteve indisponível -> "+  fishcooker2timeunavailable);
+                System.out.println("Tempo em que o " + cooker.getName() + " esteve disponivel -> "+  fishcooker2timeavailable);
+                System.out.println("Tempo em que o " + cooker.getName() + " esteve indisponivel -> "+  fishcooker2timeunavailable);
                 System.out.println("Percentagem de disponibilidade do " + cooker.getName() + " ->" + df.format((float) fishcooker1timeavailable / currentTime * 100) + "%");
                 System.out.println("-------------------------------------------------------------");
 
