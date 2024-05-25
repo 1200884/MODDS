@@ -10,12 +10,12 @@ import java.util.Random;
 public class RestaurantSimulation {
 
     private final int SIMULATION_DURATION = 180;
-    private final int NUMBER_OF_TABLES = 10;
-    private final int NUMBER_OF_WAITRESSES = 4;
+    private final int NUMBER_OF_TABLES = 50;
+    private final int NUMBER_OF_WAITRESSES = 5;
     private final int NUMBER_OF_MEAT_COOKERS = 5;
     private final int NUMBER_OF_FISH_COOKERS = 5;
     private final int NUMBER_OF_PAYMENT_EMPLOYEES = 1;
-    private final int MAX_CUSTOMER_QUEUE_ALLOW = 10;
+    private final int MAX_CUSTOMER_QUEUE_ALLOW = 25;
 
     private boolean isRestaurantOpen = true;
     private boolean allTasksCompleted = false;
@@ -171,29 +171,29 @@ public class RestaurantSimulation {
         }
 
         for(int i = 0; i < waitressesTimeAvailable.length; i++){
-            System.out.println("Tempo em que o " + waitresses.get(i).getName() + " esteve disponível -> "+  waitressesTimeAvailable[i]);
-            System.out.println("Tempo em que o " + waitresses.get(i).getName() + " esteve indisponível -> "+  waitressesTimeUnavailable[0]);
+            System.out.println("Tempo em que o " + waitresses.get(i).getName() + " esteve disponivel -> "+  waitressesTimeAvailable[i]);
+            System.out.println("Tempo em que o " + waitresses.get(i).getName() + " esteve indisponivel -> "+  waitressesTimeUnavailable[0]);
             System.out.println("Percentagem de disponibilidade do " + waitresses.get(i).getName() + " ->" + df.format((float) waitressesTimeAvailable[i] / currentTime * 100) + "%");
             System.out.println("-------------------------------------------------------------");
         }
 
         for(int i = 0; i < meatCookerTimeAvailable.length; i++){
-            System.out.println("Tempo em que o " + meatCookers.get(i).getName() + " esteve disponível -> "+  meatCookerTimeAvailable[i]);
-            System.out.println("Tempo em que o " + meatCookers.get(i).getName() + " esteve indisponível -> "+  meatCookerTimeUnavailable[0]);
+            System.out.println("Tempo em que o " + meatCookers.get(i).getName() + " esteve disponivel -> "+  meatCookerTimeAvailable[i]);
+            System.out.println("Tempo em que o " + meatCookers.get(i).getName() + " esteve indisponivel -> "+  meatCookerTimeUnavailable[0]);
             System.out.println("Percentagem de disponibilidade do " + meatCookers.get(i).getName() + " ->" + df.format((float) meatCookerTimeAvailable[i] / currentTime * 100) + "%");
             System.out.println("-------------------------------------------------------------");
         }
 
         for(int i = 0; i < fishCookerTimeAvailable.length; i++){
-            System.out.println("Tempo em que o " + fishCookers.get(i).getName() + " esteve disponível -> "+  fishCookerTimeAvailable[i]);
-            System.out.println("Tempo em que o " + fishCookers.get(i).getName() + " esteve indisponível -> "+  fishCookerTimeUnavailable[0]);
+            System.out.println("Tempo em que o " + fishCookers.get(i).getName() + " esteve disponivel -> "+  fishCookerTimeAvailable[i]);
+            System.out.println("Tempo em que o " + fishCookers.get(i).getName() + " esteve indisponivel -> "+  fishCookerTimeUnavailable[0]);
             System.out.println("Percentagem de disponibilidade do " + fishCookers.get(i).getName() + " ->" + df.format((float) fishCookerTimeAvailable[i] / currentTime * 100) + "%");
             System.out.println("-------------------------------------------------------------");
         }
 
         for(int i = 0; i < paymentEmployeeTimeAvailable.length; i++){
-            System.out.println("Tempo em que o " + paymentEmployees.get(i).getName() + " esteve disponível -> "+  paymentEmployeeTimeAvailable[i]);
-            System.out.println("Tempo em que o " + paymentEmployees.get(i).getName() + " esteve indisponível -> "+  paymentEmployeeTimeAvailable[0]);
+            System.out.println("Tempo em que o " + paymentEmployees.get(i).getName() + " esteve disponivel -> "+  paymentEmployeeTimeAvailable[i]);
+            System.out.println("Tempo em que o " + paymentEmployees.get(i).getName() + " esteve indisponivel -> "+  paymentEmployeeTimeAvailable[0]);
             System.out.println("Percentagem de disponibilidade do " + paymentEmployees.get(i).getName() + " ->" + df.format((float) paymentEmployeeTimeAvailable[i] / currentTime * 100) + "%");
             System.out.println("-------------------------------------------------------------");
         }
@@ -210,11 +210,8 @@ public class RestaurantSimulation {
 
     public void simulateMinute() throws InterruptedException {
 
-        //int percentageOfCustomerArrive = random.nextInt(101);
         double percentageOfCustomerArrive = random.nextDouble();
         updatePercentageOfCustomerArriveBasedOnTime();
-        System.out.println("Percentagem de chegarem clientes: " + this.customer_arrive_percentage);
-        System.out.println("Numero sorteado: " + percentageOfCustomerArrive);
 
         if (percentageOfCustomerArrive < customer_arrive_percentage && isRestaurantOpen) {
             int numberOfCustomers = random.nextInt(7 - 1) + 1;
@@ -253,11 +250,7 @@ public class RestaurantSimulation {
                     table.setActualTimeToOrder(0);
                     table.setHasOrdered(false);
                     System.out.println("Mesa para " + partySize);
-                } else {
-                    //Nao ha mesas suficientes
                 }
-            } else {
-                //Nenhum empregado de mesa disponivel
             }
         }
 
